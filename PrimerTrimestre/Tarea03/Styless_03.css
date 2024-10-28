@@ -1,18 +1,20 @@
 body{
     margin: 0;
     height: 100vh;
+    background-color: aliceblue;
 }
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid pink;
+}
+header p {
+    font-style: italic;
 }
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border: 2px solid red;
 }
@@ -20,12 +22,26 @@ section{
     border: 2px solid green;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 55em;
+    width: 80vw;
+}
+h2{
+    text-decoration: underline #06539f;
 }
 table,th,tr,td {
     border: 1px solid grey;
-    border-spacingg: 0;
-    width: 2em;
+    border-spacing: 0;
 }
+table{
+    width: 80%;
+    text-align: center;
+}
+th{
+    background-color: rgba(100, 149, 237, 0.3);
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
