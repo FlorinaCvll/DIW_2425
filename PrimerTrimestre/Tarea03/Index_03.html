@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 03</title>
+    <link href="Styless_03.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <h1>Conferencia Web 2024</h1>
+    <p>¡Únete a expertos en desarrollo web en este evento único!</p>
+</header>
+<main>
+    <!--Informacion general-->
+    <section>
+        <h3>Acerca del evento</h3>
+        <p>La Conferencia Web 2024 reúne a los mejores desarrolladores y diseñadores de la industria para discutir
+            tendencias,
+            tecnologías y el futuro del desarrollo web.</p>
+    </section>
+    <!--Cronograma-->
+    <section>
+        <h3>Cronograma del evento</h3>
+        <table>
+            <thead>
+            <th>Horario</th>
+            <th>Sesión</th>
+            <th>Ponente</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">9:00 - 10:00</td>
+                    <td>Introducción a HTML5</td>
+                    <td>Juan Pérez</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Taller de CSS avanzado</td>
+                </tr>
+                <tr>
+                    <td colspan="3">* El cronograma está sujeto a cambios</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!--Formulario-->
+    <section>
+        <h3>Regístrate para el Evento</h3>
+        <div>
+            <label for="nombre">Nombre Completo: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required/>
+        </div>
+        <div>
+            <label for="mail">Correo Electrónico:</label>
+            <input type="email" name="mail" id="mail" required>
+        </div>
+        <div>
+            <label for="tel">Número de Teléfono: </label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required >
+        </div>
+        <div>
+            <label for="bdday">Fecha de nacimiento: </label>
+            <input type="date" name="bdday" id="bdday">
+        </div>
+        <div>
+            <label for="color">Selecciona tu color favorito</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <p>Selecciona tu taller</p>
+            <input type="radio" name="radio" id="html" value="html">
+            <label for="html">HTML5 Básico</label>
+            <input type="radio" name="radio" id="css" value="css">
+            <label for="css">CSS Avanzado</label>
+        </div>
+        <div>
+            <label for="comentarios">Comentarios: </label>
+            <textarea id="comentarios" name="comentarios"  rows="5" cols="50"></textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar registro</button>
+            <button type="reset">Limpiar</button>
+        </div>
+    </section>
+    <!--Ubicación del evento-->
+    <section>
+        <h3>Ubicación del Evento</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6054.232781779575!2d-4.692749622621103!3d40.649364671403056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd40f308f855f121%3A0x32352302f3e15530!2sIES%20Alonso%20de%20Madrigal!5e0!3m2!1ses!2ses!4v1729496625847!5m2!1ses!2ses"
+                width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+<footer>
+    <p>Siguenos en nuestras redes sociales: </p>
+    <ul class="rrss">
+        <li>
+            <a href="http://www.facebook.com" target="_blank">Facebook</a>
+            <a href="http://www.twitter.com" target="_blank">Twitter</a>
+            <a href="http://www.linkedin.com" target="_blank">LindekIn</a>
+            <p>
+                &COPY; Conferencia Web-. Toddos los derecho reservados.
+            </p>
+        </li>
+    </ul>
+</footer>
+</main>
+</body>
+</html>

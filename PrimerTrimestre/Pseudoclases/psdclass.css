@@ -1,0 +1,18 @@
+table, tr, td{
+    border: 1px solid red;
+}
+tr:nth-child(even) {
+    background: #6e27d2;
+}
+tr:nth-child(odd) {
+    background: #16d7ba;
+}
+td:nth-child(7) {
+    background: #bdbdbd;
+}
+td:nth-child(6n) {
+    background: #e1f109;
+}
+td:nth-child(3n+4) {
+    background: rgba(51, 239, 5, 0.49);
+}
