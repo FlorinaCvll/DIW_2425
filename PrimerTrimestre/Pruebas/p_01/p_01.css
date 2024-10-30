@@ -1,0 +1,15 @@
+/*
+Utiliza los selectores de atributos, la pseudo-clase :not y tus conocimientos de CSS para dibujar un borde rojo (border: 3px solid red;)
+a todas las imágenes que no tengan el atributo “alt”.
+De esta forma nunca se te olvidará poner ese atributo.
+*/
+
+img:not([alt]) {
+    border: 3px solid red;
+}
+
+
+/*
+Utiliza los selectores de atributos y el pseudo-elemento after para añadir un icono de la imagen de pdf justo
+ detrás de todos los enlaces que apunten a un pdf .
+*/
