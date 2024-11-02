@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Tarea 03</title>
+    <meta name="author" content="Florina Covaliu">
     <link href="Styless_03.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -22,87 +23,109 @@
     <section>
         <h2>Cronograma del evento</h2>
         <table>
+            <colgroup>
+                <col style="background-color:rgba(0, 128, 128, 0.3);"/>
+                <col style="background-color: rgba(0, 128, 128, 0.3)"/>
+                <col style="background-color: rgba(0, 128, 128, 0.3);"/>
+            </colgroup>
             <thead>
             <th>Horario</th>
             <th>Sesión</th>
             <th>Ponente</th>
             </thead>
             <tbody>
-                <tr>
-                    <td rowspan="2">9:00 - 10:00</td>
-                    <td>Introducción a HTML5</td>
-                    <td>Juan Pérez</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Taller de CSS avanzado</td>
-                </tr>
-                <tr>
-                    <td colspan="3">* El cronograma está sujeto a cambios</td>
-                </tr>
+            <tr>
+                <td rowspan="2">9:00 - 10:00</td>
+                <td>Introducción a HTML5</td>
+                <td>Juan Pérez</td>
+            </tr>
+            <tr>
+                <td colspan="2">Taller de CSS avanzado</td>
+            </tr>
+            <tr>
+                <td colspan="3">* El cronograma está sujeto a cambios</td>
+            </tr>
             </tbody>
         </table>
     </section>
     <!--Formulario-->
     <section>
         <h2>Regístrate para el Evento</h2>
-        <form method="post" action="">
-        <div>
-            <label for="nombre">Nombre Completo: </label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required/>
-        </div>
-        <div>
-            <label for="mail">Correo Electrónico:</label>
-            <input type="email" name="mail" id="mail" required>
-        </div>
-        <div>
-            <label for="tel">Número de Teléfono: </label>
-            <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required >
-        </div>
-        <div>
-            <label for="bdday">Fecha de nacimiento: </label>
-            <input type="date" name="bdday" id="bdday">
-        </div>
-        <div>
-            <label for="color">Selecciona tu color favorito</label>
-            <input type="color" name="color" id="color">
-        </div>
-        <div>
-            <p>Selecciona tu taller</p>
-            <input type="radio" name="radio" id="html" value="html">
+        <form action="" method="post">
+            <!--Text-->
+            <label class="bold" for="nombre">Nombre Completo: </label>
+            <input id="nombre" name="nombre" placeholder="Escribe tu nombre" required type="text"/>
+            <!--Email-->
+            <label class="bold" for="mail">Correo Electrónico:</label>
+            <input id="mail" name="mail" required type="email">
+            <!--Tel-->
+            <label class="bold" for="tel">Número de Teléfono: </label>
+            <input id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required type="tel">
+            <!--Bday-->
+            <label class="bold" for="bdday">Fecha de nacimiento: </label>
+            <input id="bdday" name="bdday" type="date">
+            <!--URL-->
+            <label class="bold" for="url">URL a página web:</label>
+            <input id="url" name="url" type="url">
+            <!--Color-->
+            <label class="bold" for="color">Selecciona tu color favorito</label>
+            <input id="color" name="color" type="color">
+            <!--Radio-->
+            <p class="bold">Selecciona tu taller</p>
+            <input id="html" name="radio" type="radio" value="html">
             <label for="html">HTML5 Básico</label>
-            <input type="radio" name="radio" id="css" value="css">
+            <input id="css" name="radio" type="radio" value="css">
             <label for="css">CSS Avanzado</label>
-        </div>
-        <div>
-            <label for="comentarios">Comentarios: </label>
-            <textarea id="comentarios" name="comentarios"  rows="5" cols="50"></textarea>
-        </div>
-        <div>
+            <!--Checkbox-->
+            <p class="bold">Selecciona tus intereses</p>
+            <input id="frontend" name="intereses" type="checkbox" value="frontend">
+            <label for="frontend">Desarrollo Frontend</label>
+            <input id="backend" name="intereses" type="checkbox" value="backend">
+            <label for="backend">Desarrollo Backend</label>
+            <!--Opciones-->
+            <label class="bold" for="opciones">Selecciona una opción:</label>
+            <select id="opciones" name="opciones">
+                <option selected value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </select>
+            <!--Textarea-->
+            <label class="bold" for="comentarios">Comentarios:</label>
+            <textarea cols="50" id="comentarios" name="comentarios" placeholder="Introduzca un comentario."
+                      rows="5"></textarea>
+
             <button type="submit">Enviar registro</button>
             <button type="reset">Limpiar</button>
-        </div>
+
         </form>
     </section>
     <!--Ubicación del evento-->
     <section>
         <h2>Ubicación del Evento</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6054.232781779575!2d-4.692749622621103!3d40.649364671403056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd40f308f855f121%3A0x32352302f3e15530!2sIES%20Alonso%20de%20Madrigal!5e0!3m2!1ses!2ses!4v1729496625847!5m2!1ses!2ses"
-                width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe allowfullscreen=""
+                height="500" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6054.232781779575!2d-4.692749622621103!3d40.649364671403056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd40f308f855f121%3A0x32352302f3e15530!2sIES%20Alonso%20de%20Madrigal!5e0!3m2!1ses!2ses!4v1729496625847!5m2!1ses!2ses" style="border:0;"
+                width="500"></iframe>
     </section>
-<footer>
-    <p>Siguenos en nuestras redes sociales: </p>
-    <ul class="rrss">
-        <li>
-            <a href="http://www.facebook.com" target="_blank">Facebook</a>
-            <a href="http://www.twitter.com" target="_blank">Twitter</a>
-            <a href="http://www.linkedin.com" target="_blank">LindekIn</a>
-            <p>
-                &COPY; Conferencia Web-. Toddos los derecho reservados.
-            </p>
-        </li>
-    </ul>
-</footer>
+    <!-- Video-->
+    <section>
+        <h2>Video promocional</h2>
+        <video controls preload="auto">
+            <source src="video/video.mp4" title="video conferencia" type="">
+        </video>
+    </section>
+    <footer>
+        <p>Siguenos en nuestras redes sociales: </p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com" target="_blank">LindekIn</a>
+            </li>
+        </ul>
+        <p id="italic">
+            &COPY; Conferencia Web-. Toddos los derecho reservados.
+        </p>
+    </footer>
 </main>
 </body>
 </html>

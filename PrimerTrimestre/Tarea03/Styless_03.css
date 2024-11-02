@@ -16,14 +16,13 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
 }
 section{
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80vw;
+    margin: 10px auto;
 }
 h2{
     text-decoration: underline #06539f;
@@ -36,12 +35,31 @@ table{
     width: 80%;
     text-align: center;
 }
-th{
-    background-color: rgba(100, 149, 237, 0.3);
-
-}
 form{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    width: 50%;
+    height: 10%;
+}
+.bold{
+    font-weight: bold;
+}
+video{
+    width: 500px;
+    height: 300px;
+}
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#italic {
+    font-style: italic;
+}

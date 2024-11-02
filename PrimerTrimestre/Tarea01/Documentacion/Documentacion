@@ -1,0 +1,57 @@
+ELEMENTOS DE IDENTIFICACIÓN
+    • Logo de la empresa → <link rel="icon" href="img/favicon/icono.png">
+    • Nombre de la empresa → <h1>Flores del valle</h1>
+    • Titulo de la pagina en  el navegador → <title>Flores del valle - Inicio</title>
+    • Metadatos incluidos como:
+        <meta name="description" content="Flores del valle">
+        <meta name="keywords" content="Flores, valle, naturaleza">
+        <meta name="author" content="Florina Covaliu">
+
+
+ELEMENTOS DE NAVEGACIÓN
+    • Menú de navegación →
+         <a href="Inicio.html" title="Inicio">Inicio</a>
+         <a href="FloresDeExterior.html" title="Flores de exterior">Flores de exterior</a>
+         <a href="FloresDeInterior.html" title="Flores de interior">Flores de interior</a>
+         <a href="RamosArreglosFlorales.html" title="Ramos y arreglos florales">Ramos y arreglos florales</a>
+    • Enlaces a las otras paginas desde su sección →
+         <a href="FloresDeExterior.html" title="Flores de exterior">¡Descúbrelas!</a>
+         <a href="FloresDeInterior.html" title="Flores de interior">¡Descúbrelas!</a>
+         <a href="RamosArreglosFlorales.html" title="Ramos y arreglos florales">¡Descúbrelas!</a>
+    • Cambio de idioma →
+         <button id="es"><a href="Inicio.html">Castellano</a></button>
+         <button id="en"><a href="PaginasEnIngles/Index.html">Inglés</a></button>
+
+
+ELEMENTOS DE CONTENIDO
+    •Secciones de Bienvenida y Productos en <main> →
+        <section> con <h2>¡Bienvenidos a Flores del valle!</h2> y una breve introducción.
+        → Sección de Flores de Exterior: Incluye una breve descripción, imagen, y enlace a la página correspondiente.
+        → Sección de Flores de Interior: Incluye una descripción, imagen, y enlace.
+        → Sección de Ramos y Arreglos Florales: Similar a las anteriores, con imagen y enlace.
+        → Sección de Video: <iframe> incrustado que muestra un video sobre el cuidado de plantas.
+
+    • Información de Contacto y Horario en <footer> →
+        → Datos de contacto como correo electrónico, teléfono y dirección.
+        → Tabla de horarios de apertura y cierre.
+        → Mapa incrustado con la ubicación.
+
+GUÍA DE ESTILOS
+    • TIPOGRAFÍA
+        → Fuente principal para títulos y subtítulos: "Insight" con fallback a "cursive" en h1 para titulos, h2 para subtítulos y un h3 los nombres de los elementos.
+        → Fuente secundaria para párrafos: la que viene por defecto en el navegador, al igual que con el tamaño.
+        → Enlaces: subrayador y en cursiva (no todos)
+
+    • COLORES
+        → Para los h1: #a37e84
+        → Para los h2: #8f7fad
+        → Para los h3: #8f7fad
+        → Para los párrafos: #6e3c55
+
+    • IMÁGENES
+        → Imágenes de alta calidad y con atributo alt.
+        → Imágenes con bordes redondeados y sombras sutiles.
+        → Imágenes con enlaces a las páginas correspondientes.
+
+    • BOTONES
+        → Botones con borde transparente en relacion a los idiomas
