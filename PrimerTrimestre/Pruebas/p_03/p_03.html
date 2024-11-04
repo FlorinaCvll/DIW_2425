@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Florina Covaliu" name="author">
+    <title>Title</title>
+    <script src=""></script>
+    <link href="" rel="stylesheet" type="text/css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+        .flex-container {
+            display: flex;
+            width: 500px; /* Ancho total menor que la suma de los flex-basis */
+        }
+        .flex-item {
+            flex-basis: 200px;
+            border: 2px solid red;
+            margin: 2px;
+        }
+        /* Primer elemento */
+        .flex-container .flex-item:first-child {
+            flex-shrink: 0; /* Este elemento no se encogerá */
+        }
+        /* Segundo elemento */
+        .flex-container .flex-item:nth-child(2) {
+            flex-shrink: 2; /* Este elemento se encogerá el doble que el normal */
+        }
+        /* Tercer elemento */
+        .flex-container .flex-item:nth-child(3) {
+            flex-shrink: 1; /* Este elemento se encogerá normalmente */
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+</div>
+</body>
+</html>

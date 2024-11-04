@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.material-icons {
+    font-size: 36px;
+    color: #007bff;
+    padding-right: 15px;
+}
