@@ -1,0 +1,5 @@
+caption-side	Posición del título respecto la tabla	top | bottom
+table-layout	Formato de las celdas, filas y columnas	auto | fixed
+border-collapse	Selección del modelo de los bordes	collapse | separate
+border-spacing	Espaciado entre los bordes de celdas adyacentes	longitud
+empty-cells	Visibilidad de los bordes de celdas sin contenido	show | hide

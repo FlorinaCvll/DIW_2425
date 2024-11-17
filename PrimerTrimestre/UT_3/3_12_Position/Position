@@ -1,0 +1,9 @@
+Propiedad	Descripción	Valores
+display	Comportamiento del contenedor	inline | block | inline-block | none
+position	Esquema de posicionamiento	static | relative | absolute | fixed | sticky
+top right bottom left	Desplazamiento de la caja respecto al borde superior, derecho, inferior o izquierdo	longitud | porcentaje | auto
+float	Posicionamiento flotante	left | right | none
+clear	Control de cajas adyacentes a las float	none | left | right | both
+z-index	Nivel de la capa	auto | número entero
+box-sizing	Control de bordes y relleno en el comportamiento del contenedor	content-box | border-box
+visibility	Muestra u oculta un elemento ocupando el espacio	visible | hidden

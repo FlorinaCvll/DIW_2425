@@ -1,0 +1,17 @@
+Clases de caracteres
+.	Cualquier carácter excepto salto de línea
+[abc]	Cualquiera de los caracteres entre corchetes
+[^abc]	Que NO sea cualquiera de los caracteres entre corchetes
+[a-g]	Cualquier carácter entre a y g (en minúscula)
+(a|b)	a o b
+Anclas
+^abc	Comienzo de una línea
+abc$	Final de una línea
+Caracteres específicos
+\w\ d \s	Palabra, dígito, espacio en blanco
+\W \D \S	Que NO sea palabra, dígito o espacio en blanco
+\t \n \r	Tabulador, salto de línea, retorno de carro
+Cuantificadores
+a* a+ a?	0 o más veces, 1 o más veces, 0 o 1 vez
+a{5} a{2,}	Solo 5, 2 o más
+a{1,3}	Entre 1 y 3

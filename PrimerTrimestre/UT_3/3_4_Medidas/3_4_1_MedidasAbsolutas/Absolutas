@@ -1,0 +1,8 @@
+Las unidades absolutas mantienen su aspecto y se visualizan siempre igual independientemente de las características del dispositivo.
+
+px	Píxeles
+in	Pulgadas (1 pulgada = 2.54 cm)
+cm	Centímetros
+mm	Milímetros
+pt	Puntos (1 pt = 1/72 pulgadas)
+pc	Picas (1 pica = 12 puntos)

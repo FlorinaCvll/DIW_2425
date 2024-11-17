@@ -1,0 +1,6 @@
+Las unidades relativas se ajustan a cada tipo de dispositivo ya que dependen de la resolución de cada pantalla.
+
+em	Relativo al tamaño de la fuente del elemento ( 2 em significa 2 veces el tamaño de la fuente actual)
+%	Porcentaje (relativo al elemento padre)
+vh y vw	Medidas relativas de acuerdo al viewport 1vh = 1% de la altura del viewport 100vh = altura del viewport
+fr	Flexible Grid Units (fr) Se utiliza en Grid Layout y representa una fracción del espacio disponible en un contenedor

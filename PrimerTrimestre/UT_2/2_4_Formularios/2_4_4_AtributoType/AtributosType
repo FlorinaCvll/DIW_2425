@@ -1,0 +1,19 @@
+Type	Description
+checkbox	Casilla de verificación que permite seleccionar o deseleccionar distintos valores.
+color	Control para especificar un color; abre un selector de colores cuando está activo.
+date	Permite indicar una fecha (año, mes y día, sin hora). Abre un selector de fechas para año, mes y día.
+email	Permite insertar un correo electrónico haciendo su validación.
+file	Permite seleccionar un archivo.
+image	Botón con imagen de tipo submit. La imagen se define en el atributo src.
+month	Permite ingresar mes y año.
+number	Permite ingresar un número. Muestra un selector y agrega validación predeterminada.
+password	Valor oculto. Usado para contraseñas.
+radio	Permite seleccionar un valor único entre múltiples opciones.
+range	Nos deja ingresar un número cuyo valor exacto no es importante. Se muestra como un widget de rango con un valor predeterminado en el medio. Se utiliza en conjunto con «min» y «max» para definir el rango de valores aceptados.
+search	Campo para ingresar cadenas de búsqueda.
+submit	Botón que envía el formulario
+tel	Control para ingresar un número de teléfono y agrega validación predeterminada.
+text	Control para campo de texto con validación predeterminada.
+time	Control para hora.
+url	Nos permite ingresar una URL.
+week	Control para ingresar una fecha.

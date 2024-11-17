@@ -1,0 +1,10 @@
+Algunas de las etiquetas más comunes para la metainformación en HTML son:
+
+<title>: Define el título del documento, que se muestra en la barra de título del navegador y en los resultados de búsqueda.
+<meta charset="UTF-8">: Especifica la codificación de caracteres utilizada en el documento. UTF-8 es la codificación más comúnmente utilizada para admitir caracteres multilingües.
+<meta name="description" content="Descripción del sitio">: Proporciona una breve descripción del contenido del sitio web. Es utilizado por los motores de búsqueda para mostrar información sobre el sitio en los resultados de búsqueda.
+<meta name="keywords" content="palabra clave1, palabra clave2">: Especifica palabras clave relacionadas con el contenido del sitio web. Aunque no es tan relevante para los motores de búsqueda modernos, aún puede ser utilizado para conocer la temática del sitio web.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Define cómo se debe ajustar y escalar el contenido en dispositivos móviles. Es importante para lograr un diseño responsive. Ver configuración de la metaetiqueta viewport.
+<meta name="author" content="Nombre del autor">: Especifica el nombre del autor del documento.
+<meta name="copyright" content="Año copyright, titular de los derechos">: Indica los derechos de autor del documento.
+<meta name="robots" content="index,follow">: Indica a los motores de búsqueda si deben indexar y seguir los enlaces dentro del documento.

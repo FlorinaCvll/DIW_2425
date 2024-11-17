@@ -1,0 +1,6 @@
+Pseudo-clase	Descripción
+:link	No visitado por el usuario
+:visited	Visitado por el usuario
+:hover	Modifica el estilo cuando un elemento apuntador pasa por encima
+:active	Se activa cuando el usuario pulsa el elemento
+:focus	Se activa cuando tiene el foco sobre el elemento

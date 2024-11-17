@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Listas con Emoticonos</title>
+  <style>
+    ul {
+      list-style: none; /* Eliminamos los marcadores predeterminados */
+      padding: 0; /* Eliminamos el relleno predeterminado */
+    }
+
+    li::before {
+      content: '😊'; /* Emoticono como marcador */
+      margin-right: 10px; /* Espacio entre el emoticono y el texto del elemento */
+    }
+  </style>
+</head>
+<body>
+<h1>Listas con Emoticonos</h1>
+<ul>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+  <li>Elemento 4</li>
+  <li>Elemento 5</li>
+</ul>
+</body>
+</html>

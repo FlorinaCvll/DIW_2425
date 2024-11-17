@@ -1,0 +1,13 @@
+<input>: Su apariencia es más limitada, ya que solo puede mostrar texto o imágenes y no puede contener otros elementos HTML.
+<button>: Es un elemento de botón más versátil que permite incluir contenido HTML, como texto, imágenes o iconos. Esto permite una mayor personalización en la presentación visual.
+
+
+
+Tipo de Elemento	Etiqueta a utilizar	Descripción
+Botón de envío de formulario	<input type="submit">	Envía los datos del formulario al servidor.
+Botón de envío con imagen	<input type="image">	Botón que envía el formulario, pero se muestra como una imagen definida en el atributo src.
+Botón de reinicio de formulario	<input type="reset">	Restaura todos los campos del formulario a sus valores iniciales.
+Botón sin funcionalidad	<input type="button">	No envía ni reinicia el formulario, se utiliza para ejecutar scripts de JavaScript.
+Botón de envío	<button type="submit">	Similar al input type="submit", pero permite contenido HTML adicional.
+Botón de reinicio	<button type="reset">	Similar al input type="reset", pero permite contenido HTML adicional.
+Botón sin funcionalidad	<button type="button">	No envía ni reinicia el formulario, se utiliza para ejecutar scripts de JavaScript y permite contenido HTML adicional.

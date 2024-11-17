@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .a { position: static; top: 800px; left: 400px;} /*Como puedes ver, en position static no funcionan las propiedades top, bottom, left y right*/
+    .b { position: static; }
+    .c { position: static; }
+    p  { width: 100px; color: purple; border: dotted;}
+    .bloque2 { position: relative; left: 20px; top: 10px;  }
+    .bloqueB { position: fixed; top: 130px; left: 100px; }
+
+
+    .x {
+      position: relative; /*cambia este valor a static para ver la diferencia*/
+      width: 300px;
+      height: 300px;
+      border: 2px dotted purple;
+    }
+    .y {
+      position: absolute;/*Se posiciona de forma relativa al primer elemento padre que tiene una posición distinta a static*/
+      background-color: #e1f4fc;
+      top: 60px;
+      right: 0px;
+      width: 200px;
+      height: 80px;
+      border: 3px solid blue;
+    }
+
+  </style>
+</head>
+<body>
+<h3>Propiedad position: static</h3>
+<p class="a">Bloque1 </p>
+<p class="b">Bloque2 </p>
+<p class="c">Bloque3 </p>
+
+<h3>Propiedad position: relative</h3>
+<p>Bloque1 </p>
+<p class="bloque2">Bloque2 </p>
+<p>Bloque3 </p>
+
+<h3>Propiedad position: fixed</h3>
+<p>Bloque A </p>
+<p class="bloqueB">BloqueB </p>
+<p>BloqueC </p>
+
+<div class="x">
+  <p>Contenedor con position: relative</p>
+  <p>Contenedor con position: relative</p>
+  <p>Contenedor con position: relative</p>
+  <p>Contenedor con position: relative</p>
+  <p>Contenedor con position: relative</p>
+  <div class="y"><p>Contenedor con position: absolute</p></div>
+</div>
+</body>
+</html>

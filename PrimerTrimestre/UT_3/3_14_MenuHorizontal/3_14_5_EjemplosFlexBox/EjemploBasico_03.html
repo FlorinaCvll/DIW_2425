@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px;
+        }
+        nav{
+            width: 100%; /* Ancho completo del contenedor */
+            background-color: #3498db;
+        }
+        nav ul {
+            display: flex; /* Activar Flexbox */
+            list-style-type: none; /* Quitar estilos de lista */
+            padding: 0; /* Quitar padding predeterminado */
+            margin: 0; /* Quitar margen predeterminado */
+
+        }
+        nav li {
+            flex-grow: 1; /* Crecer para ocupar el espacio disponible */
+            text-align: center; /* Centrar el texto */
+        }
+        nav a {
+            display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+            margin:0;
+            color: white;
+            padding: 10px; /* Espaciado para una mejor visualización */
+            text-decoration: none; /* Quitar el subrayado del enlace */
+            border: 1px solid white;
+        }
+        nav a:hover {
+            background-color: #217dbb;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Nombre del Sitio</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+<p>Dos contenedores alineados verticalmente</p>
+<p>Menú de navegación con los elementos de tipo flex para alineación horizontal uno detrás del otro. Como tiene elementos li y dentro elementos a. Primero ocupamos el espacio disponible con flex-grow:1 en los li. Después hacemos que los enlaces ocupen todo su contenedor padre haciendo display:block </p>
+</body>
+</html>

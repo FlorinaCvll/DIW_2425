@@ -1,0 +1,6 @@
+Pseudo-elemento	Descripción
+::first-line	Primera línea de texto de un elemento
+::first-letter	Primera letra de la primera línea de texto de un elemento
+::before	Añade contenido al principio del documento
+::after	Añade contenido al final del documento
+::selection	Coge la porción del texto que se está seleccionando por el usuario

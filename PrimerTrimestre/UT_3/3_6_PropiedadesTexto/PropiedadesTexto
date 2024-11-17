@@ -1,0 +1,10 @@
+Propiedad	Descripción	Valores
+text-indent	Desplazamiento de la primera línea del texto	longitud | porcentaje
+text-align	Alineamiento del texto	left | right | center | justify
+text-decoration	Efectos de subrayado y tachado	none | underline | overline | line-through
+letter-spacing	Espacio entre caracteres	normal | longitud
+word-spacing	Espacio entre palabras	normal | longitud
+text-transform	Transformación a mayúsculas / minúsculas	capitalize | uppercase | lowercase | none
+line-height	Tamaño del espacio entre líneas (interlineado)	longitud | porcentaje
+vertical-align	Alineación vertical	top | middle | bottom
+baseline | sub | super | valor

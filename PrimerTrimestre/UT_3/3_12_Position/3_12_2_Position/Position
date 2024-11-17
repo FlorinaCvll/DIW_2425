@@ -1,0 +1,7 @@
+Valores: static | relative | absolute | fixed
+
+static: los elementos se posicionan de acuerdo al flujo normal de la página. Es la posición natural de los elementos. No son afectados por las propiedades top, bottom, left y right.
+relative: los elementos se posicionan de forma relativa a su posición normal.
+fixed: los elementos se posicionan de forma relativa a la ventana del navegador. Su posición permanece fija aunque se desplace la ventana.
+absolute: los elementos se posicionan de forma relativa al primer elemento padre que tenga una posición distinta a static.
+sticky: los elementos son posicionados de forma relativa hasta que su bloque contenedor alcanza un límite establecido.

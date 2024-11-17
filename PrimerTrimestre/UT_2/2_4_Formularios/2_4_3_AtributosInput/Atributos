@@ -1,0 +1,12 @@
+Atributos	Descripción
+type	Tipo de input: text, password, checkbox, radio, etc.
+value	Valor inicial del input.
+readonly	El input es de solo lectura.
+disabled	El input no se puede modificar.
+size	Cantidad de caracteres visibles en un input. Su valor por defecto es 20. Funciona en los inputs de los siguientes tipos: text, search, tel, url, email, and password.
+maxlength 	Máximo número de caracteres del input.
+min / max	Mínimo y máximo número de caracteres del input.
+pattern	Nos permite indicar un patrón.
+placeholder 	Describe el valor esperado en un campo.
+required	Especifica que es obligatorio completar el input.
+autofocus 	Indica que se hace foco en ese input cuando se carga la página.

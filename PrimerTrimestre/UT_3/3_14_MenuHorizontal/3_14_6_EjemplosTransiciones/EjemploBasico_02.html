@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    *{margin:0;padding:0;}
+    .menu {
+      background-color: #333;
+    }
+    .menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+    .menu ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .menu ul li:last-child {
+      margin-right: 0;
+    }
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .menu ul li a:hover {
+      transform: translateY(3px);
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+<nav class="menu">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Acerca de</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Portafolio</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

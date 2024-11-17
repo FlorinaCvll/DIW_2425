@@ -1,0 +1,10 @@
+Elemento	Descripción
+<img>	Representa una imagen.
+<iframe>	Representa un contexto anidado de navegación, es decir, un documento HTML embebido.
+<embed>	Representa un punto de integración para una aplicación o contenido interactivo externo que por lo general no es HTML.
+<object>	Representa un recurso externo, que será tratado como una imagen, un sub-documento HTML o un recurso externo a ser procesado por un plugin.
+<video>	Representa un vídeo.
+<audio>	Representa un sonido.
+<source>	Permite a autores especificar recursos multimedia alternativos para los elementos multimedia como  <video> o <audio>.
+<canvas>	Representa un área de mapa de bits en el que se pueden utilizar scripts para renderizar gráficos.
+<svg>	Define una imagen vectorial embebida.

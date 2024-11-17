@@ -1,0 +1,7 @@
+La propiedad overflow solo funciona sobre elementos de tipo bloque con una altura definida. Sus valores son los siguientes:
+
+overflow: visible|hidden|scroll|auto;
+Overflow: visible (default). Por defecto la propiedad overflow es visible y lo que hace es que los contenidos se salgan del elemento y sean completamente visibles.
+Overflow: hidden. Los contenidos que se salen del contenedor padre se ocultan y no se muestran barras de scroll. De esta forma se puede controlar el tamaño del elemento y su contenido.
+Overflow: scroll. Se muestra una barra de scroll (horizontal y vertical) cuando los contenidos no caben en el contenedor o caja.
+Overflow: auto. El navegador es el que decide si se muestran las barras de scroll o si se extiende el contenedor. En cualquier caso, gracias a este valor nunca se permite que el contenido desborde al contenedor. Este valor es muy interesante ya que si el contenido se sale por un lado (horizontal o vertical), sólo se muestra la barra de scroll de ese lado.

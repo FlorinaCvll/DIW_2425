@@ -1,0 +1,5 @@
+overflow-y: visible|hidden|scroll|auto;
+visible: Es el valor por defecto. El contenido desbordado se muestra fuera del contenedor sin recortarse.
+hidden: El contenido desbordado se oculta, y no es visible fuera del contenedor.
+scroll: Agrega barras de desplazamiento en el eje y, permitiendo al usuario desplazarse para ver el contenido oculto.
+auto: Similar a scroll, agrega barras de desplazamiento solo si es necesario. Si no hay desbordamiento, no se mostrarán las barras.

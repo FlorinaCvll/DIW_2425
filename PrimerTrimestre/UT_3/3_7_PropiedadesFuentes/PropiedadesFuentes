@@ -1,0 +1,6 @@
+Propiedad	Descripción	Valores
+font-family	Familias de fuentes	nombre-familia | *
+font-style	Estilo de la fuente	normal | italic | oblique
+font-variant	Convierte a mayúsculas manteniendo todas las letras en un tamaño inferior a la primera	normal | small-caps
+font-weight	Anchura de los caracteres. Normal = 400, Negrita = 700	normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+font-size	Tamaño de la fuente	xx-small | x-small | small | medium | large | x-large | xx-large | larger | smaller | longitud | porcentaje

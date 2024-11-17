@@ -1,0 +1,12 @@
+Pseudo-clase	Descripción
+:first-child	Primer hijo
+:last-child	Último hijo
+:first-of-type	Primer hermano de su tipo
+:last-of-type	Último hermano de su tipo
+:only-child	Hijos únicos
+:only-of-type	Únicos hermanos de su tipo
+:empty	Elementos que no tienen hijos
+:nth-child(n)	Enésimo elemento hijo
+:nth-last-child(n)	Enésimo elemento hijo contando desde el último
+:nth-of-type(n)	Enésimo hermano de su tipo
+:nth-last-of-type(n)	Enésimo hermano de su tipo comenzando desde el último
