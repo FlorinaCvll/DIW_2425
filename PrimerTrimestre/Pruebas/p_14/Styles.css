@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+body{
+    padding-top: 70px;
+}
+
+h1{
+    color: black;
+    font-size: 12px;
+    float: right;
+    font-weight: 10px;
+    font-style: italic;
+}
+h2{
+    font-size: 36px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background-color: #F7F9FA;
+}
+nav {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+header nav a img {
+    padding: 18px 10px;
+}
+header nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+}
+header nav ul li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 26px 10px;
+}
+header nav ul li a:hover {
+    background-color: #5E5D6E;
+}
+
+.parallax {
+    background-image: url("https://www.eniun.com/wp-content/uploads/eniun-home-historia.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parallax img{
+    max-width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#btn-fixed{
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.fa-whatsapp {
+    color: greenyellow;
+    font-size: 3em;
+}
+.call-to-action{
+    max-width: 700px;
+    margin: 150px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.big {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.call-to-action h2, .call-to-action p, .call-to-action button{
+    margin-bottom: 20px;
+}
+button{
+    padding: 15px 40px 15px 40px;
+    background-color: black;
+    font-size: 1em;
+    color: white;
+    transition: background 0.5s linear;
+    -webkit-transition: background 1s linear;
+}
+button:hover{
+    background-color: #4A4959;
+}
+.info-box {
+    background-color: #1c1d22;
+    text-align: center;
+    color: white;
+    padding:110px 0px 110px 0px ;
+}
+.info-box h2{
+    margin-bottom: 30px;
+}
+.info-box #flex-p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info-box #flex-p p{
+    padding: 30px;
+    max-width: 300px;
+}
+.fa-star, .fa-thumbs-up, .fa-check{
+    font-size: 2.7em;
+    display: block;
+    color: white;
+    margin-bottom: 30px;
+}
+.description-box{
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.description-box h2{
+    text-align: center;
+}
+.img-container {
+    margin: 20px 0 80px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+.img-container img, img-container p{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.img-container p{
+    text-align: justify;
+}
+footer{
+    padding: 30px 0 30px 0;
+    text-align: center;
+    clear: both;
+    background-color: black;
+}
+.fa-facebook-f, .fa-twitter, .fa-pinterest-p{
+    font-size: 2em;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 700px) {
+    .img-container {
+        width: 100%;
+        margin: 0;
+    }
+}

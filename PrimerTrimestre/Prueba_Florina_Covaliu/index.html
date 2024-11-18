@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Explora Aventuras por el Mundo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Florina Covaliu">
+    <meta name="description" content="Viajes, mundo, explorar">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="shortcut icon" href="img/logo%20alonso.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Explora aventuras por el mundo</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Inspiracion.html">Inspiracion de viajes</a>
+            <a href="Ayudas.html">Ayudas para viajeros</a>
+            <a href="DestinosPopulares.html">Destinos populares</a>
+            <a href="Ofertas.html">Ofertas especiales</a>
+            <a href="BlogsDeviajes.html">Blogs de viajes</a>
+        </nav>
+    </header>
+    <main>
+        <!--Seccion de inicio, con botones hacia las otras páginas-->
+        <section>
+            <h2>Viajar, viajar, viajar</h2> <!--Mensaje de bienvenida-->
+            <div class="btn-nav">
+                <a href="DestinosPopulares.html">Destinos populares</a>
+                <a href="Ofertas.html">Ofertas especiales</a>
+                <a href="BlogsDeviajes.html">Blog de viajes</a>
+            </div>
+        </section>
+        <!--Galeria de los destinos de Aventuras-->
+        <section>
+            <h1>Aventuras</h1>
+            <p>Si se quiere un poco de aventura...</p>
+            <div class="img-container">
+                <figure>
+                    <img src="img/buceo.jpeg" alt="buceo con tiburones" title="buceo con tiburones">
+                    <figcaption>Buceo con tiburones</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/safari.jpeg" alt="safari" title="safari">
+                    <figcaption>Safari</figcaption>
+                </figure>
+            </div>
+            <div class="btn-more">
+                <button name="saberMas"><a href="#">Descubrir más</a></button>
+            </div>
+        </section>
+        <!--Galeria de los destinos de escapadas relajantes-->
+        <section>
+            <h1>Escapadas relajantes</h1>
+            <p>Para relajarse y olvidarse de la rutina...</p>
+            <div class="img-container">
+                <figure>
+                    <img src="img/playa.jpeg" alt="playa" title="playa">
+                    <figcaption>Playa</figcaption>
+
+                </figure>
+                <figure>
+                    <img src="img/templo.jpeg" alt="templo" title="templo">
+                    <figcaption>Templo</figcaption>
+                </figure>
+            </div>
+            <div class="btn-more">
+                <button name="saberMas"><a href="#">Descubrir más</a></button>
+            </div>
+        </section>
+        <!--Seccion que redirecciona a otra pagina para inspiracion de viajes-->
+        <section>
+            <h1>Inspiración de viajes</h1>
+            <article>
+                <h2>10 mejores rutas de senderismo por Europa</h2>
+                <p>Estas son las 10 mejores rutas para hacer una escapada de senderismo por Europa ya sea en amigos, en familia, pareja o solo</p>
+                <div class="btn-more">
+                    <button name="saberMas"><a href="#">Descubrir más</a></button>
+                </div>
+            </article>
+            <article>
+                <h2>Escapadas culturales en Asia</h2>
+                <p>Cuando se trata de cultura, Asia tiene las mejores zonas</p>
+                <div class="btn-more">
+                    <button name="saberMas"><a href="#">Descubrir más</a></button>
+                </div>
+            </article>
+        </section>
+        <!--Seecion que redirecciona a otra pagina para ayudas y consejos sobre los viajes-->
+        <section>
+            <h1>Ayudas para viajeros</h1>
+            <article>
+                <h2>Cómo organizar tu viaje</h2>
+                <p>Primero, las ganas y no tener miedo.</p>
+                <div class="btn-more">
+                    <button name="saberMas"><a href="#">Descubrir más</a></button>
+                </div>
+            </article>
+            <article>
+                <h2>Qué me llevo</h2>
+                <p>Cosas</p>
+                <div class="btn-more">
+                    <button name="saberMas"><a href="#">Descubrir más</a></button>
+                </div>
+            </article>
+        </section>
+        <!--Formulario de contacto-->
+        <section>
+            <h1>Formulario de contacto</h1>
+            <form method="post" action="#">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" required>
+
+                <textarea name="comentario" id="comentario" rows="10" cols="10">Introduzca un comentario o petición</textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Florina Covaliu</p>
+    </footer>
+</body>
+</html>
