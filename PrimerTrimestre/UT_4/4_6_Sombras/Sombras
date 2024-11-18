@@ -1,0 +1,12 @@
+El formato es prácticamente el mismo para las dos propiedades.
+
+text-shadow: posx posy desenfoque color | none;
+box-shadow: posx posy desenfoque tamaño color inset | none;
+Significado de las propiedades:
+
+posx: sombra que se aplica en el eje horizontal.
+posy: sombra que se proyecta en el eje vertical.
+desenfoque o blur: cantidad de sombra borrosa.
+tamaño: tamaño de la sombra hacia los lados.
+color: color de la sombra.
+inset: posiciona la sombra dentro del marco.

@@ -1,0 +1,27 @@
+Valor	Descripción
+crosshair	Cursor tipo cruz para tareas en las que se requiere precisión.
+help	Interrogación. Cursor de ayuda.
+move	Flechas hacia todos lados. Cursor para mover elementos.
+pointer	Mano o apuntador. Cursor para hacer clic.
+progress	Barra progreso o similar. Cursor que indica que se está trabajando en segundo plano.
+text	Cursor que permite seleccionar texto.
+wait	Cursor que indica que se debe esperar.
+vertical-text	Flecha vertical, utilizado para texto en orientación vertical.
+alias	Flecha diagonal, utilizado para indicar que se puede acceder a un enlace o recurso externo.
+no-drop	Círculo con una línea diagonal, utilizado para indicar que no se permite soltar el elemento arrastrado.
+grab	Mano cerrada, utilizado para indicar que el elemento se puede agarrar
+grabbing	Mano abierta, utilizado para indicar que el elemento está siendo arrastrado o agarrado.
+zoom-in	Símbolo de lupa con un signo de más, utilizado para indicar que se puede hacer zoom in.
+zoom-out	Símbolo de lupa con un signo de menos, utilizado para indicar que se puede hacer zoom out.
+not-allowed	Círculo con una línea diagonal, utilizado para indicar que la interacción no está permitida.
+cell	Cursor tipo cruz, utilizado en hojas de cálculo para ajustar celdas.
+copy	Puntero con un símbolo de copia, utilizado para indicar que se puede realizar una copia de un elemento.
+ew-resize	Flecha bidireccional horizontal, utilizado para indicar que se puede ajustar el tamaño horizontalmente.
+ns-resize	Flecha bidireccional vertical, utilizado para indicar que se puede ajustar el tamaño verticalmente.
+nwse-resize	Flecha bidireccional diagonal, utilizado para indicar que se puede ajustar el tamaño diagonalmente en dirección noroeste-sureste.
+nesw-resize	Flecha bidireccional diagonal, utilizado para indicar que se puede ajustar el tamaño diagonalmente en dirección noreste-suroeste.
+col-resize	Flecha bidireccional horizontal con una línea vertical, utilizado para indicar que se puede ajustar el tamaño de una columna.
+row-resize	Flecha bidireccional vertical con una línea horizontal, utilizado para indicar que se puede ajustar el tamaño de una fila.
+context-menu	Puntero con un símbolo de menú, utilizado para indicar que se puede abrir un menú contextual.
+none	No se muestra ningún cursor.
+Personalized	Imagen o valor personalizado en el cursor.

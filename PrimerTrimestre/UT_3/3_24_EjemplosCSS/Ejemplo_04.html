@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+    .emoji-list {
+      list-style: none;
+      padding: 0;
+    }
+    .emoji-list li {
+      font-size: 18px;
+      margin: 10px 0;
+      position: relative; /* Necesario para ::before */
+    }
+    .emoji-list li::before {
+      content: "😻 "; /* Inserta el emoji antes del texto del elemento */
+      font-size: 24px;
+      margin-right: 10px; /* Espacio entre el emoji y el texto */
+    }
+  </style>
+</head>
+<body>
+<h1> 😻 Listado con Emoji &#x1F63B;</h1>
+<ul class="emoji-list">
+  <li>Mi primera tarea</li>
+  <li>Mi segunda tarea</li>
+  <li>Mi tercera tarea</li>
+  <li>Mi cuarta tarea</li>
+  <li>Mi quinta tarea</li>
+</ul>
+</body>
+</html>

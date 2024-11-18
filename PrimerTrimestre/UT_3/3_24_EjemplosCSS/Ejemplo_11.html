@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        article{
+            float: left;
+            width: 350px;
+            height: 140px;
+            background-color: #F7F3F3;
+            margin: 10px;
+        }
+        article img{
+            padding: 20px;
+            width: 100px;
+            float: left;
+        }
+        .datos-productos{
+            float: right;
+            padding: 20px;
+            max-width: 190px;
+            box-sizing: border-box;
+        }
+        .borrar{
+            float: right;
+            padding: 0 5px 0 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: -10px;
+            margin-left: 10px;
+        }
+        .nombre{
+            float: right;
+            font-weight: bold;
+        }
+        .precio{
+            clear: both;
+            float: right;
+            color: #666;
+            font-size: 90%;
+            margin: 5px 0 5px 0;
+        }
+        .colores{
+            clear: both;
+        }
+        .colores li{
+            width: 20px;
+            display: inline-block;
+            height: 20px;
+            border-radius: 12.5px;
+            margin-left: 5px;
+            background-color: burlywood;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <article>
+        <img src="imgs/zapatos.jpg" alt="zapatos">
+        <div class="datos-productos">
+            <div class="borrar">x</div>
+            <div class="nombre">Zapatos de piel</div>
+            <div class="precio">39,99 $</div>
+            <div class="colores">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+        </div>
+    </article>
+</main>
+</body>
+</html>

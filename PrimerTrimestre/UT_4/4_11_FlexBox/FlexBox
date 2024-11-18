@@ -1,0 +1,45 @@
+display: flex | inline-flex
+    flex: Cuando aplicas display: flex a un contenedor, este se convierte en un contenedor flexible que distribuye su contenido de manera flexible a lo largo del eje principal. Por defecto, el eje principal es horizontal (de izquierda a derecha). Los elementos secundarios dentro de este contenedor flex se comportarán como bloques y se ajustarán automáticamente para llenar el contenedor en la dirección principal.
+    inline-flex: Este valor es similar a display: flex, pero el contenedor flexible se comporta como un elemento en línea en lugar de un bloque. Esto significa que ocupará solo el ancho necesario y permitirá que otros elementos en línea coexistan en la misma línea
+
+flex-wrap: nowrap | wrap | wrap-reverse
+    nowrap: los elementos no pasan a la siguiente fila y se reduce su anchura para mostrarlos. Este es el valor por defecto.
+    wrap: los elementos pasan a la siguiente fila y conservan su anchura.
+    wrap-reverse: los elementos pasan a la siguiente fila, pero en sentido inverso al de su
+    declaración.
+
+justify-content: flex-start | flex-end | center | space-between |space-around
+    La propiedad justify-content es la que define la justificación horizontal de los elementos hijos de un contenedor flexible. Esta propiedad acepta cinco valores:
+
+    flex-start: posiciona los elementos a la izquierda del contenedor. Valor por defecto.
+    flex-end: posiciona los elementos a la derecha del contenedor.
+    center: centra los elementos en el contenedor
+    space-between: añade un espacio idéntico entre los elementos. El primer elemento está alineado a la izquierda del contenedor, y el último, a la derecha.
+    space-around: espacia de forma regular los elementos que no están alineados a la izquierda y a la derecha del contenedor.
+
+align-items: stretch | flex-start | flex-end | center | baseline
+    La propiedad align-items actúa sobre el eje vertical. Para utilizar esta propiedad primero se debe definir la propiedad flex-direction: row.
+
+    La propiedad align-items acepta cinco valores:
+
+    stretch: los elementos se amplían verticalmente para ocupar toda la altura disponible en el contenedor. Este es el valor por defecto.
+    flex-start: los elementos se colocan en la parte superior del contenedor.
+    flex-end: los elementos se colocan en la parte inferior del contenedor.
+    center: los elementos se colocan en el centro del contenedor.
+    baseline: los elementos se alinean sobre la línea de base del texto.
+
+flex-direction: row | row-reverse | column | column-reverse
+
+    La propiedad flex-direction determina la dirección en la que los elementos flexibles se colocan dentro de un contenedor flex. Puede establecerse para organizar los elementos en una fila (horizontal) o en una columna (vertical).
+
+    La propiedad flex-direction acepta cuatro valores:
+
+    row (valor por defecto): Coloca los elementos en una fila horizontal. El inicio está a la izquierda y el final a la derecha.
+    row-reverse: Coloca los elementos en una fila horizontal, pero en orden inverso al valor por defecto. El inicio estará a la derecha y el final a la izquierda.
+    column: Coloca los elementos en una columna vertical. El inicio está arriba y el final abajo.
+    column-reverse: Coloca los elementos en una columna vertical, pero en orden inverso al valor por defecto. El inicio estará abajo y el final arriba.
+
+flex-grow	Controla cómo los elementos flex se expanden	Número (valor relativo)
+flex-shrink	Controla cómo los elementos flex se encogen	Número (valor relativo)
+flex-basis	Tamaño inicial de los elementos flex	Valor, auto (por defecto)
+order	Orden de los elementos flex dentro del contenedor	Número (entero)

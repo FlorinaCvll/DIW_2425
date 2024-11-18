@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    /* Estilos generales */
+    *{
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* Estilos de la tabla */
+    .styled-table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      caption-side: bottom;
+    }
+
+    .styled-table caption {
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .styled-table th, .styled-table td {
+      padding: 10px;
+    }
+
+    .styled-table th {
+      background-color: #009688;
+      color: #fff;
+    }
+
+    .styled-table th, .styled-table td {
+      border: 1px solid #ddd;
+    }
+
+    .styled-table tbody tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    .styled-table tbody tr:hover {
+      background-color: #c7e2e0;
+    }
+    .styled-table tbody tr td:nth-child(3)::after { /* tercer hijo de tr, que es de tipo td, el primer hijo es un th, el segundo es un td, el tercero es un td*/
+      content: "€";
+    }
+  </style>
+</head>
+<body>
+<h1>Tabla de Ejemplo</h1>
+<table class="styled-table">
+  <caption><b>Tabla 1.</b> Lista de Productos</caption>
+  <thead>
+  <tr>
+    <th>Nº</th>
+    <th>Producto</th>
+    <th>Precio</th>
+    <th>Stock</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th>1</th>
+    <td>Producto A</td>
+    <td>25</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <th>2</th>
+    <td>Producto B</td>
+    <td>15</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <th>3</th>
+    <td>Producto C</td>
+    <td>40</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td>Producto D</td>
+    <td>32</td>
+    <td>10</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
