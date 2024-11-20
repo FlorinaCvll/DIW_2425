@@ -1,0 +1,14 @@
+$colores: red, green,blue,yellow;
+$colores: red, green,blue,yellow;
+
+$primero: nth($colores, 1);
+$segundo: nth($colores, 2);
+$tercero: nth($colores, 3);
+$cuarto: nth($colores, 4);
+
+tr:nth-child(odd) {
+    background-color: $primero;
+}
+tr:nth-child(even) {
+    background-color: $segundo;
+}

@@ -1,0 +1,17 @@
+// Definición de variables
+$color-primario: #3498db;
+$color-secundario: #e74c3c;
+$tamano-fuente: 16px;
+$espaciado: 20px;
+
+// Uso de variables
+.encabezado {
+  background-color: $color-primario;
+  font-size: $tamano-fuente;
+  padding: $espaciado;
+}
+.boton {
+  background-color: $color-secundario;
+  font-size: $tamano-fuente;
+  margin: $espaciado;
+}
