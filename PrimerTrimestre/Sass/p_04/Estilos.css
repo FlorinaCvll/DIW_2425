@@ -1,0 +1,9 @@
+tr:nth-child(odd) {
+  background-color: red;
+}
+
+tr:nth-child(even) {
+  background-color: green;
+}
+
+/*# sourceMappingURL=Estilos.css.map */
