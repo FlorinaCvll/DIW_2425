@@ -1,0 +1,150 @@
+/*Importar fuente de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700');
+
+/* Crear variables */
+
+
+/*Para el tamaño de la letra*/
+$font-size: (
+    "cuerpo": 1rem,
+    "h3": 150%,
+    "h2": 200%,
+    "h1": 300%,
+    "nav ul li": 110%,
+    "footer p": 80%
+);
+
+// Variables para el grosor de la letra
+$font-weight: (
+    "light": 300,
+    "regular": 400,
+    "bold": 700
+);
+
+// Tipo de letra
+$font-family: 'Nunito', sans-serif;
+
+// Ancho maximo
+$max-width: 1400px;
+
+// Margen por defecto
+$default-margin: 0;
+
+// Padding por defecto
+$default-padding: 0;
+
+// Color de fondo
+$default-bg: #eee;
+
+$default-foreground: rgb(30,30,30);
+
+// variables compuestas
+$cuerpo: map-get($font-size, "cuerpo") map-get($font-weight, "regular") $font-family;
+
+// Estilos de la página
+html {
+  max-width: $max-width;
+  color: $default-foreground;
+}
+
+h {
+  &1 {
+    font-size: map-get($font-size, quote(#{&}));
+    font-weight: map-get($font-weight, "bold");
+    font-family: $font-family;
+  }
+  &2 {
+    font-size: map-get($font-size, quote(#{&}));
+    font-weight: map-get($font-weight, "bold");
+    font-family: $font-family;
+  }
+  &3 {
+    font-size: map-get($font-size, quote(#{&}));
+    font-weight: map-get($font-weight, "bold");
+    font-family: $font-family;
+  }
+}
+
+a {
+  text-decoration: none;
+    color: $default-foreground;
+}
+
+// Estilos de la cabecera
+
+header {
+  text-align: center;
+    background-color: $default-bg;
+    padding: 0.5rem;
+  img {
+    width: 10%;
+    float: left;
+  }
+
+  h1, h2 {
+    width: 90%;
+    margin: $default-margin;
+  }
+}
+
+
+nav{
+  background-color: $default-bg;
+    padding: 0.1rem;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  ul{
+    list-style: none;
+    margin: $default-margin;
+    padding: 0.2em;
+    font: map-get($font-weight, "bold")
+  }
+
+  li{
+    display: inline-block;
+    margin: 0.2em;
+    font: map-get($font-weight, "bold") map-get($font-size, "nav ul li") $font-family;
+  }
+
+  a{
+    font-weight: map-get($font-weight, "regular");
+    &:hover{
+      text-decoration: underline;
+      font-weight: map-get($font-weight, "bold");
+    }
+  }
+}
+
+
+section {
+  min-height: 20em;
+}
+
+footer{
+  text-align: center;
+  div{
+    background-color: $default-bg;
+    padding: 0.5em;
+    margin: 0.2em 0 0 0;
+
+    img {
+        width: 3em;
+      float: left;
+    }
+  }
+
+  p{
+    background-color:  $default-bg;
+    margin: $default-margin;
+    padding: 0.1em 0;
+    font: map-get($font-weight, "light") map-get($font-size, "footer p") $font-family;
+
+    & a:hover {
+        text-decoration: underline;
+      font-weight: map-get($font-weight, "bold");
+    }
+
+  }
+}
