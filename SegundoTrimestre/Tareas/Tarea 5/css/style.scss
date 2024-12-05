@@ -1,150 +1,145 @@
-/*Importar fuente de google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700');
+//IMPORTAR LA FUENTE
 
-/* Crear variables */
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 
-
-/*Para el tamaño de la letra*/
-$font-size: (
-    "cuerpo": 1rem,
-    "h3": 150%,
-    "h2": 200%,
-    "h1": 300%,
-    "nav ul li": 110%,
-    "footer p": 80%
+//CREAR VARIABLES
+//Tamaño de letra
+$font-sizes: (
+        "cuerpo": 1rem,
+        "h3": 150%,
+        "h2": 200%,
+        "h1": 300%,
+        "nav ul li": 110%,
+        "footer p": 80%
 );
 
-// Variables para el grosor de la letra
-$font-weight: (
-    "light": 300,
-    "regular": 400,
-    "bold": 700
+//Grosor de letra
+$font-weights: (
+        "light": 300,
+        "regular": 400,
+        "bold": 700
 );
 
-// Tipo de letra
-$font-family: 'Nunito', sans-serif;
+$font-family: "Nunito", sans-serif;
 
-// Ancho maximo
+//Ancho máximo
 $max-width: 1400px;
 
-// Margen por defecto
+//Margen por defecto
 $default-margin: 0;
 
-// Padding por defecto
+//Padding por defecto
 $default-padding: 0;
 
-// Color de fondo
-$default-bg: #eee;
+$default-background: #eee;
 
-$default-foreground: rgb(30,30,30);
+$default-foreground: rgb(30, 30, 30);
 
-// variables compuestas
-$cuerpo: map-get($font-size, "cuerpo") map-get($font-weight, "regular") $font-family;
+//Variables compuestas
+$cuerpo: map-get($font-sizes, "cuerpo") map-get($font-weights, "regular") $font-family;
 
-// Estilos de la página
 html {
   max-width: $max-width;
+  margin: 0 auto;
+}
+
+body {
+  font: $cuerpo;
   color: $default-foreground;
 }
 
 h {
   &1 {
-    font-size: map-get($font-size, quote(#{&}));
-    font-weight: map-get($font-weight, "bold");
-    font-family: $font-family;
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family
   }
+
   &2 {
-    font-size: map-get($font-size, quote(#{&}));
-    font-weight: map-get($font-weight, "bold");
-    font-family: $font-family;
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family
   }
+
   &3 {
-    font-size: map-get($font-size, quote(#{&}));
-    font-weight: map-get($font-weight, "bold");
-    font-family: $font-family;
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family
   }
 }
 
 a {
   text-decoration: none;
-    color: $default-foreground;
+  color: $default-foreground;
 }
 
-// Estilos de la cabecera
-
+//CABECERA
 header {
   text-align: center;
-    background-color: $default-bg;
-    padding: 0.5rem;
-  img {
-    width: 10%;
-    float: left;
-  }
+  background-color: $default-background;
+  padding: 0.5em;
 
-  h1, h2 {
+  h1,
+  h2 {
     width: 90%;
     margin: $default-margin;
   }
 }
 
+//MENU
 
-nav{
-  background-color: $default-bg;
-    padding: 0.1rem;
-  margin: 0.5em 0 0 0;
+nav {
+  background-color: $default-background;
+  padding: 0.1em;
+  margin: 0.5em;
   text-align: center;
   text-transform: uppercase;
 
-  ul{
+  ul {
     list-style: none;
     margin: $default-margin;
     padding: 0.2em;
-    font: map-get($font-weight, "bold")
+    font: map-get($font-weights, "bold")
   }
 
-  li{
+  li {
     display: inline-block;
     margin: 0.2em;
-    font: map-get($font-weight, "bold") map-get($font-size, "nav ul li") $font-family;
+    font: map-get($font-weights, "bold") map-get($font-sizes, "nav ul li") $font-family;
   }
 
-  a{
-    font-weight: map-get($font-weight, "regular");
-    &:hover{
+
+  a {
+    font-weight: map-get($font-weights, "regular");
+
+    &:hover {
       text-decoration: underline;
-      font-weight: map-get($font-weight, "bold");
+      font-weight: map-get($font-weights, "bold");
     }
   }
 }
 
-
+//SECCIONES
 section {
   min-height: 20em;
 }
 
-footer{
+footer {
   text-align: center;
-  div{
-    background-color: $default-bg;
+
+  div {
+    background-color: $default-background;
     padding: 0.5em;
     margin: 0.2em 0 0 0;
-
-    img {
-        width: 3em;
-      float: left;
-    }
   }
 
-  p{
-    background-color:  $default-bg;
+  img {
+    width: 3em;
+  }
+
+  p {
+    background-color: $default-background;
     margin: $default-margin;
     padding: 0.1em 0;
-    font: map-get($font-weight, "light") map-get($font-size, "footer p") $font-family;
+    font: map-get($font-weights, "light") map-get($font-sizes, "footer p") $font-family;
+  }
 
-    & a:hover {
-        text-decoration: underline;
-      font-weight: map-get($font-weight, "bold");
-    }
-
+  & a:hover {
+    text-decoration: underline;
+    font-weight: map-get($font-weights, "light");
   }
 }

@@ -1,0 +1,65 @@
+//REalizar imports
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+@import "variables";
+
+html {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+body {
+    font: $cuerpo;
+    color: $default-foreground;
+    margin: 0.5em;
+    @include fuente-titulos
+}
+
+@media (max-width: 768px){
+  body{
+    margin: $default-margin;
+  }
+}
+a{
+    color: $default-foreground;
+    text-decoration: none;
+}
+
+header {
+  text-align: center;
+  background-color: $default-background;
+  padding: 0.5em;
+
+  img {
+    width: 10%;
+    float: left;
+  }
+  h1{
+    width: 90%;
+    color: color-aleatorio("red");
+  }
+  h2{
+    width: 90%;
+    color: color-aleatorio("green");
+  }
+  @media (max-width: 768px){
+    img{
+      width: 5em;
+      float: none;
+    }
+    h1,h2{
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+nav {
+    background-color: $default-background;
+    padding: 0.1em
+    margin: $separador-margin;
+    text-align: center;
+    text-transform: uppercase;
+    ul{
+      @include lista-horizontal;
+    }
+}

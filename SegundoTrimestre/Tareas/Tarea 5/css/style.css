@@ -1,27 +1,22 @@
-@charset "UTF-8";
-/*Importar fuente de google fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700");
-/* Crear variables */
-/*Para el tamaño de la letra*/
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
 html {
   max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font: 1rem 400 "Nunito", sans-serif;
   color: rgb(30, 30, 30);
 }
 
 h1 {
-  font-size: 300%;
-  font-weight: 700;
-  font-family: "Nunito", sans-serif;
+  font: 700 300% "Nunito", sans-serif;
 }
 h2 {
-  font-size: 200%;
-  font-weight: 700;
-  font-family: "Nunito", sans-serif;
+  font: 700 200% "Nunito", sans-serif;
 }
 h3 {
-  font-size: 150%;
-  font-weight: 700;
-  font-family: "Nunito", sans-serif;
+  font: 700 150% "Nunito", sans-serif;
 }
 
 a {
@@ -32,21 +27,18 @@ a {
 header {
   text-align: center;
   background-color: #eee;
-  padding: 0.5rem;
+  padding: 0.5em;
 }
-header img {
-  width: 10%;
-  float: left;
-}
-header h1, header h2 {
+header h1,
+header h2 {
   width: 90%;
   margin: 0;
 }
 
 nav {
   background-color: #eee;
-  padding: 0.1rem;
-  margin: 0.5em 0 0 0;
+  padding: 0.1em;
+  margin: 0.5em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -81,9 +73,8 @@ footer div {
   padding: 0.5em;
   margin: 0.2em 0 0 0;
 }
-footer div img {
+footer img {
   width: 3em;
-  float: left;
 }
 footer p {
   background-color: #eee;
@@ -91,9 +82,9 @@ footer p {
   padding: 0.1em 0;
   font: 300 80% "Nunito", sans-serif;
 }
-footer p a:hover {
+footer a:hover {
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
