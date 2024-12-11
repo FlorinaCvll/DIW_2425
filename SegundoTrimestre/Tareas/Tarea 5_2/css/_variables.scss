@@ -57,6 +57,17 @@ $cuerpo: map-get($font-sizes, "cuerpo") map-get($font-weights, "regular") $font-
   @return $aleaotorio;
 }
 
+$list-colores: ();
+
+@function color-sin-repetir(){
+  $aleatorio: color-aleatorio(null,0.5);
+  @while (index($lista-colores, $aleatorio)){
+    $aleatorio: color-aleatorio(null,0.5);
+  }
+  $lista-colores: append($lista-colores, $aleatorio) !global;
+
+    @return $aleatorio;
+}
 
 
 
@@ -84,4 +95,13 @@ $cuerpo: map-get($font-sizes, "cuerpo") map-get($font-weights, "regular") $font-
     padding: 0.2em;
     font: map-get($font-weights, "bold") map-get($font-sizes, "nav ul li") $font-family;
   }
+}
+
+@mixin fondo-article {
+  @for $i from 1 through 6 {
+    article:nth-child(#{$i}){
+      background-color: color-sin-repetir();
+    }
+  }
+
 }

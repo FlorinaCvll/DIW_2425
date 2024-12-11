@@ -55,7 +55,7 @@ header {
 
 nav {
     background-color: $default-background;
-    padding: 0.1em
+    padding: 0.1em;
     margin: $separador-margin;
     text-align: center;
     text-transform: uppercase;
@@ -63,3 +63,90 @@ nav {
       @include lista-horizontal;
     }
 }
+
+@media (max-width: 768px){
+  nav {
+    margin: $default-margin;
+  }
+  ul li {
+    width: 100%;
+  }
+}
+
+// definir section
+section {
+  margin: $separador-margin;
+
+  article {
+    width: 33%;
+    display: inline-block;
+    min-height: 16em;
+
+    img{
+      width: 25%;
+        float: left;
+      padding: 0 1em 0 0;
+    }
+    div{
+      width: 65%;
+      float: left;
+      padding: 1em 1em 0 0;
+
+    }
+  }
+
+@include fondo-article;
+
+  @media (max-width: 992px){
+    article{
+      width: 49.7%;
+    }
+  }
+  @media (max-width: 768px){
+    article{
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  section{
+    margin: $default-margin;
+  }
+}
+
+// FOOTER
+
+footer {
+  margin: $separador-margin;
+  text-align: center;
+
+  div{
+    background-color: $default-background;
+    padding: 0.2em 0 0 0;
+
+    img {
+      width: 3em;
+    }
+  }
+
+  p {
+    margin: $separador-margin;
+    background-color: $default-background;
+    padding: 0.1em 0;
+    font: map-get($font-weights, "light") map-get($font-sizes, "p") $font-family;
+
+    & a:hover{
+      text-decoration: underline;
+      font-weight: map-get($font-weights, "bold");
+    }
+  }
+}
+
+@media (max-width: 768px){
+  footer{
+    margin: $default-margin;
+  }
+}
+
