@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="" type="text/css">
+  <link href="../../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src=""></script>
+  <style>
+    .row {
+      border: 2px solid green;
+    }
+    .col {
+      border: 2px solid red;
+    }
+    .col-4{
+      border: 2px solid pink;
+    }
+    .col-8{
+        border: 2px solid blue;
+    }
+    .col-2{
+        border: 2px solid yellow;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      Columna 1
+    </div>
+    <div class="col">
+      Columna 2
+    </div>
+    <div class="col">
+      Columna 3
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      Columna 4
+    </div>
+    <div class="col-2">
+      Columna 5
+    </div>
+    <div class="col-4">
+      Columna 6
+    </div>
+    <div class="col-4">
+      Columna 7
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">Contenedor de 4 columnnas</div>
+    <div class="col-8">Contenedor de 8 columnna</div>
+  </div>
+</div>
+
+
+
+<p>Ejemplo de creación de 3 columnas con la clase .col:</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      Columna
+    </div>
+    <div class="col">
+      Columna
+    </div>
+    <div class="col">
+      Columna
+    </div>
+  </div>
+</div>
+<p>Ejemplo de creación de 3 columnas con la clase .col-xx:</p>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      Columna
+    </div>
+    <div class="col-4">
+      Columna
+    </div>
+    <div class="col-4">
+      Columna
+    </div>
+  </div>
+</div>
+<p>Ejemplo de dos columnas, una que ocupa 4 espacios y otra que ocupa 8 espacios:</p>
+<div class="container">
+  <div class="row">
+    <div class="col-4">Contenedor de 4 columnnas</div>
+    <div class="col-8">Contenedor de 8 columnna</div>
+  </div>
+</div>
+<p>Ejemplo de dos columnas, una que ocupa 4 espacios y otra que ocupa 8 espacios cuando el tamaño de pantalla es inferior a 720px. Cuando el tamaño es superior los contenedores ocuparán 6 espacios cada uno:</p>
+<div class="container">
+  <div class="row">
+    <div class="col-4 col-md-6">Contenedor 1</div>
+    <div class="col-8 col-md-6">Contenedor 2</div>
+  </div>
+</div>
+
+<script src="../../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
