@@ -1,0 +1,50 @@
+@import "../../../bootstrap-5.3.3/scss/functions";
+@import "../../../bootstrap-5.3.3/scss/variables";
+@import "../../../bootstrap-5.3.3/scss/variables-dark";
+@import "../../../bootstrap-5.3.3/scss/maps";
+@import "../../../bootstrap-5.3.3/scss/mixins";
+@import "../../../bootstrap-5.3.3/scss/utilities";
+@import "../../../bootstrap-5.3.3/scss/variables";
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+
+$utilities: map-merge(
+                $utilities,
+                (
+                        "color": map-merge(
+                                        map-get($utilities, "color"),
+                                        (
+                                                values: map-merge(
+                                                                map-get(map-get($utilities, "color"), "values"),
+                                                                        (
+                                                                                $all-colors
+                                                                        ),
+                                                ),
+                                        ),
+                        ),
+                )
+);
+
+
+$colors: (
+        "blue":       $blue,
+        "indigo":     $indigo,
+        "purple":     $purple,
+        "pink":       $pink,
+        "red":        $red,
+        "orange":     $orange,
+        "yellow":     $yellow,
+        "green":      $green,
+        "teal":       $teal,
+        "cyan":       $cyan,
+        "black":      $black,
+        "white":      $white,
+        "gray":       $gray-600,
+        "gray-dark":  $gray-800
+);
+
+.bg-color {
+  background-color: rgba(220, 186, 239, 0.45);
+}
+
+
+@import "../../../bootstrap-5.3.3/scss/utilities/api";
