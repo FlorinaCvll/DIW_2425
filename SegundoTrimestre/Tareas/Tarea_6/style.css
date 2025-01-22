@@ -1,3 +1,8 @@
+body {
+    cursor: url('IMG/pata.jpg') 16 16, auto;
+}
+
+
 .custom-imgFluid{
     max-width: 250px;
 }

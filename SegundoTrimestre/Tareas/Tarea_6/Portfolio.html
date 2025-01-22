@@ -10,25 +10,65 @@
           integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
 </head>
-<body>
+<body class="bg-color">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Simba</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link" href="Home.html">Home</a>
                 <a class="nav-link" href="About.html">About</a>
-                <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+                <a aria-current="page" class="nav-link active" href="Portfolio.html">Portfolio</a>
                 <a class="nav-link" href="Services.html">Services</a>
                 <a class="nav-link" href="Contact.html">Contact</a>
             </div>
         </div>
     </div>
 </nav>
-
+<h1 class="display-4 text-center">Portfolio</h1>
+<!--TODO en pantallas pequeas que haya espacio entre card y card-->
+<div class="d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center pt-3 pb-3">
+    <div class="card" style="width: 18rem;">
+        <img alt="..." class="" src="...">
+        <div class="card-body">
+            <h5 class="card-title">Palos</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img alt="..." class="card-img-top" src="...">
+        <div class="card-body">
+            <h5 class="card-title">Carreras</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img alt="..." class="card-img-top" src="...">
+        <div class="card-body">
+            <h5 class="card-title">Protector</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img alt="..." class="card-img-top" src="...">
+        <div class="card-body">
+            <h5 class="card-title">Jardinero</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+        </div>
+    </div>
+</div>
 
 <script src="../../../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
