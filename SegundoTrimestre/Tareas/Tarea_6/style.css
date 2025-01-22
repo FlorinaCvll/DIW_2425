@@ -1,11 +1,3 @@
-.equal-height {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.equal-height img, .equal-height p {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.custom-imgFluid{
+    max-width: 250px;
 }
