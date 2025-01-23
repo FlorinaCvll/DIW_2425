@@ -6,3 +6,18 @@ body {
 .custom-imgFluid{
     max-width: 250px;
 }
+
+.carousel-item img {
+    max-height: 500px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel-caption {
+    position: static;
+    padding-top: 10px;
+    margin-top: 20px; /* Add margin to create space between the image and the caption */
+    background-color: rgba(147, 112, 219, 0.3); /* Optional: Add background color for better readability */
+    color: #0d39ac;
+}

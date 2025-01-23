@@ -29,7 +29,50 @@
     </div>
 </nav>
 
+<div class="container-fluid">
+    <h1 class="display-4 text-center">Services</h1>
+    <form class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label class="form-label" for="name">Nombre</label>
+            <input class="form-control" id="name" placeholder="Tu nombre" required type="text">
+            <div class="invalid-feedback">
+                Por favor, ingresa tu nombre.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="email">Correo</label>
+            <input class="form-control" id="email" placeholder="nombre@ejemplo.com" required type="email">
+            <div class="invalid-feedback">
+                Por favor, ingresa un correo válido.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="message">Mensaje</label>
+            <textarea class="form-control" id="message" placeholder="Tu mensaje" required rows="3"></textarea>
+            <div class="invalid-feedback">
+                Por favor, ingresa un mensaje.
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+</div>
 
+<script>
+    (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
 <script src="../../../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
