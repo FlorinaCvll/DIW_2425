@@ -2,6 +2,10 @@
     font-family: 'Chopin';
     src: url('Letras/chopin_script/ChopinScript.otf') format('opentype');
 }
+@font-face {
+    font-family: 'exmouth';
+    src: url('Letras/exmouth/exmouth_.ttf') format('truetype');
+}
 
 .c-fs {
     font-family: 'Chopin', sans-serif;
@@ -13,6 +17,10 @@
     0% {
         opacity: 0
     }
+}
+.fs-3, .fw-normal{
+    font-family: 'exmouth';
+    color: #ffefff;
 }
 
 body {
