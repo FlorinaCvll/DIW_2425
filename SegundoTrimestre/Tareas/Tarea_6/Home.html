@@ -6,12 +6,12 @@
     <link href="../../../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="Vars.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
           integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
 </head>
-<body class="bg-color">
+<body class="d-flex flex-column min-vh-100 bg-color">
 <!--NAVBAR-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -23,35 +23,56 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a aria-current="page" class="nav-link active" href="#Home">Home</a>
-                <a class="nav-link" href="About.html">About</a>
+                <a aria-current="page" class="nav-link active" href="Home.html">Inicio</a>
+                <a class="nav-link" href="About.html">Sobre mi</a>
                 <a class="nav-link" href="Portfolio.html">Portfolio</a>
-                <a class="nav-link" href="Services.html">Services</a>
-                <a class="nav-link" href="Contact.html">Contact</a>
+                <a class="nav-link" href="Services.html">Servicios</a>
+                <a class="nav-link" href="Contact.html">Contacto</a>
             </div>
         </div>
     </div>
 </nav>
 <!--Imagenes y texto-->
 <section class="container-fluid text-center" id="home">
-    <div class="jumbotron">
+    <div class="jumbotron" data-aos="fade-up">
         <h1 class="display-4">Simba</h1>
-        <p class="lead">Simba, el gato común europeo. Catador de palitos para gatos y de todo tipo de
-            plantas que puede
-            haber en el interior o el exterior de la casa, evitando las venenosas, y de todo tipo de comidas, tanto
-            de gatos como humanos.
-            Corredor de carreras ilegales y experto en subirse en lo más alto de los muebles.</p>
+        <p class="lead">Simba es un gato europeo lleno de carisma y energía. De porte elegante y mirada expresiva,
+            combina curiosidad, inteligencia y un carácter juguetón. Su personalidad lo convierte en el centro de
+            atención y un compañero único.</p>
         <hr class="my-4">
         <div class="mb-4">
-            <img alt="Simba" class="rounded-circle img-fluid custom-imgFluid" src="IMG/Simba.jpg">
+            <img alt="Simba" class="rounded-circle img-fluid custom-imgFluid" data-aos="zoom-in" src="IMG/Simba.jpg">
         </div>
         <div>
-            <a class="btn btn-primary btn-lg" href="About.html" role="button">Saber más sobre mi</a>
+            <a class="btn btn-primary btn-lg" data-aos="fade-right" href="About.html" role="button">Saber más sobre
+                mi</a>
         </div>
     </div>
 </section>
 
-
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3 mt-auto">
+    <div class="container">
+        <p>Sígueme en redes sociales</p>
+        <a class="text-light me-3" href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="text-light me-3" href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="text-light me-3" href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="text-light" href="https://www.linkedin.com" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+</footer>
 <script src="../../../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/aos/dist/aos.js"></script>
+<script>
+
+    AOS.init();
+</script>
 </body>
 </html>

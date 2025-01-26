@@ -5,12 +5,13 @@
     <title>Portfolio Personal</title>
     <link href="../../../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="Vars.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
           integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
 </head>
-<body class="bg-color">
+<body class="d-flex flex-column min-vh-100 bg-color">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Simba</a>
@@ -21,58 +22,157 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" href="Home.html">Home</a>
-                <a class="nav-link" href="About.html">About</a>
-                <a aria-current="page" class="nav-link active" href="Portfolio.html">Portfolio</a>
-                <a class="nav-link" href="Services.html">Services</a>
-                <a class="nav-link" href="Contact.html">Contact</a>
+                <a class="nav-link" href="Home.html">Inicio</a>
+                <a class="nav-link" href="About.html">Sobre mi</a>
+                <a class="nav-link active" href="Portfolio.html">Portfolio</a>
+                <a class="nav-link" href="Services.html">Servicios</a>
+                <a class="nav-link" href="Contact.html">Contacto</a>
             </div>
         </div>
     </div>
 </nav>
-<div class="container-fluid">
 
+<div class="container-fluid" data-aos="fade-up">
     <h1 class="display-4 text-center">Portfolio</h1>
-    <!--TODO en pantallas pequeas que haya espacio entre card y card-->
-    <div class="d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center pt-3 pb-3">
-        <div class="card mb-3 mb-sm-4" style="width: 18rem;">
-            <img alt="..." class="card-img-top" src="...">
-            <div class="card-body">
-                <h5 class="card-title">Palos <i class="fas fa-tree text-muted"></i></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a class="btn btn-primary" href="#">Go somewhere</a>
+    <div class="row">
+        <div class="col-md-4 mb-3" data-aos="fade-right">
+            <div class="card h-100">
+                <img alt="Simba plagas" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="IMG/plagas.jpeg" title="Simba plagas">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Gestión de Plagas Domésticas <i class="fas fa-bug text-muted"></i>
+                    </h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Implementación de un sistema natural de
+                        control de insectos mediante técnicas avanzadas de cacería.
+                        <span class="d-block fw-semibold">Rol de Simba</span> Jefe de Operaciones de Caza, garantizando
+                        un hogar libre de moscas y otros insectos.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card mb-3 mb-sm-4" style="width: 18rem;">
-            <img alt="..." class="card-img-top" src="...">
-            <div class="card-body">
-                <h5 class="card-title">Carreras <i class="fas fa-running text-muted"></i></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a class="btn btn-primary" href="#">Go somewhere</a>
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+            <div class="card h-100">
+                <img alt="Simba cata" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="IMG/catar.jpeg"
+                     title="Simba cata">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Cata Gourmet para Gatos <i
+                            class="fas fa-utensil-spoon text-muted"></i></h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Evaluación de una amplia variedad de snacks
+                        y alimentos, categorizados según sabor, textura y aroma.
+                        <span class="d-block fw-semibold">Rol de Simba</span> Catador Principal, aportando opiniones
+                        basadas en su experiencia diaria.</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card mb-3 mb-sm-4" style="width: 18rem;">
-            <img alt="..." class="card-img-top" src="...">
-            <div class="card-body">
-                <h5 class="card-title">Protector <i class="fas fa-shield-alt text-muted"></i></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a class="btn btn-primary" href="#">Go somewhere</a>
+        <div class="col-md-4 mb-3" data-aos="fade-left">
+            <div class="card h-100">
+                <img alt="Simba dormido" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="IMG/Simbote.jpg" title="Simba dormido">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Instructor de Relajación y Siestas Profesionales<i
+                            class="fas fa-bed text-muted"></i></h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Promoción de técnicas avanzadas de
+                        relajación y descanso, demostrando la importancia de encontrar el lugar perfecto para una siesta
+                        en cualquier momento del día.
+                        <span class="d-block fw-semibold">Rol de Simba</span> Mentor y Modelo de Relax, enseñando a
+                        través del ejemplo cómo maximizar la calidad del descanso.</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card mb-3 mb-sm-4" style="width: 18rem;">
-            <img alt="..." class="card-img-top" src="...">
-            <div class="card-body">
-                <h5 class="card-title">Jardinero <i class="fas fa-leaf text-muted"></i></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a class="btn btn-primary" href="#">Go somewhere</a>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-3" data-aos="fade-right">
+            <div class="card h-100">
+                <img alt="Simba protector" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="IMG/protector.jpeg" title="Simba protector">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Protección y Compañía 24/7<i
+                            class="fas fa-shield-alt text-muted"></i></h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Proyecto para garantizar la seguridad
+                        emocional de su humano, mediante una presencia constante en momentos clave del día.
+                        <span class="d-block fw-semibold">Rol de Simba</span> Guardián y Asistente Personal, siempre
+                        atento y presente.</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+            <div class="card h-100">
+                <img alt="Simba explorando" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="IMG/Explorando.jpeg" title="Simba explorando">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Explorador de Nuevos Territorios<i
+                            class="fas fa-compass text-muted"></i></h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Investigación y análisis de cada rincón del
+                        hogar, incluyendo áreas previamente inexploradas como armarios, cajas y espacios debajo de
+                        muebles.
+                        <span class="d-block fw-semibold">Rol de Simba</span> Explorador Jefe, documentando sus
+                        descubrimientos con un enfoque creativo.</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-left">
+            <div class="card h-100">
+                <img alt="Simba decorador" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="IMG/decorador.jpeg" title="Simba decorador">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Decorador de Interiores Innovador<i
+                            class="fas fa-leaf text-muted"></i></h5>
+                    <p class="card-text">
+                        <span class="fw-semibold">Descripción:</span> Reorganización de plantas, alfombras y otros
+                        elementos decorativos del hogar con un enfoque instintivo y único.
+                        <span class="d-block fw-semibold">Rol de Simba:</span> Artista Conceptual, aportando ideas
+                        frescas a la decoración del hogar.</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<footer class="bg-dark text-light text-center py-3 mt-auto" data-aos="fade-up">
+    <div class="container">
+        <p>Sígueme en redes sociales</p>
+        <a class="text-light me-3" href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="text-light me-3" href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="text-light me-3" href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="text-light" href="https://www.linkedin.com" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+</footer>
 <script src="../../../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

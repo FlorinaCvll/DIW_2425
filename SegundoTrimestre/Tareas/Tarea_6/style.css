@@ -1,7 +1,15 @@
 body {
-    cursor: url('IMG/pata.jpg') 16 16, auto;
+    cursor: url('Cursores/Gato/AS2.cur') 32 32, auto;
+    background-color: #E6E6FA; /* Lila Claro */
 }
 
+a, .btn {
+    cursor: url('Cursores/Gato02/ASK2.cur') 32 32, auto;
+}
+
+.navbar {
+    background-color: #9370DB; /* Lila Oscuro */
+}
 
 .custom-imgFluid{
     max-width: 250px;
@@ -17,7 +25,52 @@ body {
 .carousel-caption {
     position: static;
     padding-top: 10px;
-    margin-top: 20px; /* Add margin to create space between the image and the caption */
-    background-color: rgba(147, 112, 219, 0.3); /* Optional: Add background color for better readability */
+    margin-top: 20px;
+    background-color: rgba(147, 112, 219, 0.3);
     color: #0d39ac;
+}
+
+.pg1 {
+    background-color: #FFC0CB;
+}
+
+.pg2 {
+    background-color: #FF69B4;
+}
+
+.pg3 {
+    background-color: #9370DB;
+}
+
+.pg4 {
+    background-color: #ADD8E6;
+}
+
+.card {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #176d95;
+}
+
+.btnSubmit {
+    background-color: #FF69B4;
+    color: white;
+}
+
+.btnReset {
+    background-color: #ADD8E6;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #FF69B4;
+    color: white;
+}
+
+.fixed-size {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
 }
