@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ejemplo de Containers en Bootstrap</title>
+    <!-- Incluir Bootstrap desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- CONTAINER FIJO -->
+<div class="container bg-light border mt-4 p-3">
+    <h2>Container Fijo</h2>
+    <p>Este contenedor tiene un ancho máximo predefinido dependiendo del tamaño de la pantalla.</p>
+    <div class="row">
+        <div class="col bg-primary text-white p-3">Columna 1</div>
+        <div class="col bg-secondary text-white p-3">Columna 2</div>
+    </div>
+</div>
+
+<!-- CONTAINER FLUID -->
+<div class="container-fluid bg-dark text-white border mt-4 p-3">
+    <h2>Container Fluid</h2>
+    <p>Este contenedor ocupa el 100% del ancho de la pantalla sin importar el tamaño.</p>
+    <div class="row">
+        <div class="col bg-success text-white p-3">Columna 1</div>
+        <div class="col bg-danger text-white p-3">Columna 2</div>
+    </div>
+</div>
+
+<!-- CONTAINERS CON BREAKPOINTS -->
+
+<div class="container-sm bg-warning border mt-4 p-3">
+    <h2>Container SM</h2>
+    <p>Este contenedor tiene un ancho fijo a partir de <strong>576px</strong> en adelante.</p>
+</div>
+
+<div class="container-md bg-info border mt-4 p-3">
+    <h2>Container MD</h2>
+    <p>Este contenedor tiene un ancho fijo a partir de <strong>768px</strong> en adelante.</p>
+</div>
+
+<div class="container-lg bg-success border mt-4 p-3">
+    <h2>Container LG</h2>
+    <p>Este contenedor tiene un ancho fijo a partir de <strong>992px</strong> en adelante.</p>
+</div>
+
+<div class="container-xl bg-primary text-white border mt-4 p-3">
+    <h2>Container XL</h2>
+    <p>Este contenedor tiene un ancho fijo a partir de <strong>1200px</strong> en adelante.</p>
+</div>
+
+<div class="container-xxl bg-secondary text-white border mt-4 p-3">
+    <h2>Container XXL</h2>
+    <p>Este contenedor tiene un ancho fijo a partir de <strong>1400px</strong> en adelante.</p>
+</div>
+
+<!-- Incluir Bootstrap JS y Popper.js desde CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+<!--
+1. container: Usa este contenedor si deseas que tu sitio tenga un diseño fluido pero limitado a un ancho máximo,
+especialmente para páginas de escritorio.
+2. container-fluid: Usa este contenedor si necesitas que los elementos ocupen todo el ancho disponible,
+sin límites, especialmente para sitios más modernos o aquellos que requieren un diseño de pantalla completa.
+3. container-{breakpoint}: Si quieres que tu diseño se adapte de manera precisa a diferentes dispositivos,
+puedes usar estos contenedores para asignar anchos específicos a diferentes puntos de interrupción.
+Es útil para diseños más complejos que requieren personalización según el dispositivo.-->
