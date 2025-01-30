@@ -19,12 +19,12 @@
     }
 }
 .fs-3, .fw-normal{
-    font-family: 'exmouth';
-    color: #ffefff;
+    font-family: 'exmouth', serif;
+    color: rgb(255, 239, 255);
 }
 
 body {
-    background: #18283d url('IMG/Header.jpg');
+    background: rgb(24, 40, 61) url('IMG/Header.jpg');
     background-size: cover;
     margin: 0;
     padding: 0;
