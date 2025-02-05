@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #82afcc, #c69f9f);
+    overflow: hidden;
+    height: 100vh;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.winter-card {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparente */
+    border: 2px solid transparent; /* Borde transparente */
+    border-image-source: linear-gradient(45deg, #A2C9D9, #A8D5BA, #C8A2D6); /* Borde invernal brillante */
+    border-image-slice: 1;
+    padding: 10px; /* Añadir espacio interno para el borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir sombra para resaltar el borde */
+}
+
+.card-text {
+    text-align: justify;
+}
