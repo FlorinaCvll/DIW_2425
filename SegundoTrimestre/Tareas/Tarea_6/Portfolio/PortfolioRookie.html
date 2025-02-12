@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Rookie</title>
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Vars.css" rel="stylesheet" type="text/css">
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/aos/dist/aos.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-color">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Amaranthine</a>
+        <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a aria-current="page" class="nav-link active" href="../Home.html">Inicio</a>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                       href="#" id="navbarDropdown1" role="button">Sobre Nosotros</a>
+                    <ul aria-labelledby="navbarDropdown2" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../About/SobreSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="../About/SobreKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="../About/SobreAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="../About/SobreRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="../About/SobrePrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                       href="#" id="navbarDropdown2" role="button">Portfolio</a>
+                    <ul aria-labelledby="navbarDropdown2" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Portfolio/PortfolioSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="../Portfolio/PortfolioKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="../Portfolio/PortfolioAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="../Portfolio/PortfolioRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="PortfolioPrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                       id="navbarDropdown3" role="button">Servicios</a>
+                    <ul aria-labelledby="navbarDropdown3" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Services/ServiciosSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="../Services/ServiciosKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="../Services/ServiciosAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="../Services/ServiciosRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="../Services/ServiciosPrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <a class="nav-link" href="../Contacto/Contact.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <h1 class="display-4 text-center pt-4">🐶 Rookie – El Recuerdo que Ilumina</h1>
+    <div class="row pt-5">
+        <div class="col-md-4 mb-3" data-aos="fade-right">
+            <div class="card h-100">
+                <img alt="Rookie" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="../Galeria/Rookie/Rookie_01.jpg" title="Rookie">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        <i class="fas fa-map-signs"></i> Planificación de Aventuras de Campo <i
+                            class="fas fa-shield-alt text-muted"></i>
+                    </h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Organización de salidas al aire libre para
+                        explorar nuevos entornos, dejando una huella memorable en cada paseo.
+                        <span class="d-block fw-semibold">Rol</span> Explorador y Guía, liderando cada salida con
+                        entusiasmo.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-down">
+            <div class="card h-100">
+                <img alt="Rookie" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="../Galeria/Rookie/Rookie_02.jpg"
+                     title="Rookie">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        <i class="fas fa-birthday-cake"></i> Eventos de Celebración Familiar <i
+                            class="fas fa-heart text-muted"></i>
+                    </h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Creación de eventos para celebrar cada
+                        momento, siempre con la intención de unir a la familia a través de la diversión.
+                        <span class="d-block fw-semibold">Rol</span> Organizador de Fiestas, haciendo de cada día una
+                        ocasión especial.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-left">
+            <div class="card h-100">
+                <img alt="Rookie" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="../Galeria/Rookie/Rookie_03.jpg" title="Rookie">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        <i class="fas fa-brain"></i> Cuidado de la Salud Mental Familiar <i
+                            class="fas fa-walking text-muted"></i>
+                    </h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Brindó apoyo emocional a todos los
+                        miembros, recordando siempre la importancia de la compañía y el amor incondicional.
+                        <span class="d-block fw-semibold">Rol</span> Consejero Emocional, reconociendo las necesidades
+                        afectivas de los demás.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-3" data-aos="fade-right">
+            <div class="card h-100">
+                <img alt="Rookie" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="../Galeria/Rookie/Rookie_04.jpg" title="Rookie">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        <i class="fas fa-lightbulb"></i> Investigación de Nuevas Travesuras <i
+                            class="fas fa-utensils text-muted"></i>
+                    </h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span>Desarrolló métodos creativos para realizar
+                        bromas inofensivas y hacer reír a la familia.
+                        <span class="d-block fw-semibold">Rol</span>romista Creativo, siempre ideando nuevas formas de
+                        divertir a todos.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+            <div class="card h-100">
+                <img alt="Rookie" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="../Galeria/Rookie/Rookie_05.jpg" title="Rookie">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        <i class="fas fa-camera-retro"></i> Preservación de Recuerdos Especiales <i
+                            class="fas fa-couch text-muted"></i>
+                    </h5>
+                    <p class="card-text">
+                        <span class="d-block fw-semibold">Descripción</span> Guardó cada momento de alegría en el
+                        corazón, asegurándose de que no se olvidara nunca.
+                        <span class="d-block fw-semibold">Rol</span>Guardián de Recuerdos, haciendo que cada experiencia
+                        fuera inolvidable.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-left">
+            <div class="card h-100">
+                <img alt="Rookie" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
+                     src="../Galeria/Rookie/Rookie_03.jpg" title="Rookie">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        <i class="fas fa-shield-alt"></i> Asistencia en la Protección Familiar <i
+                            class="fas fa-users text-muted"></i>
+                    </h5>
+                    <p class="card-text">
+                        <span class="fw-semibold">Descripción:</span>Aunque no siempre visible, su presencia era siempre
+                        reconfortante, y su lealtad nunca falló.
+                        <span class="d-block fw-semibold">Rol</span> Protector Silencioso, siempre atento al bienestar
+                        de los suyos.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Ir a proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-light text-center py-3 mt-auto">
+    <div class="container">
+        <p>Sígueme en redes sociales</p>
+        <a class="text-light me-3" href="https://www.facebook.com" target="_blank">
+            <span class="fab fa-facebook-f"></span>
+        </a>
+        <a class="text-light me-3" href="https://www.twitter.com" target="_blank">
+            <span class="fab fa-twitter"></span>
+        </a>
+        <a class="text-light me-3" href="https://www.instagram.com" target="_blank">
+            <span class="fab fa-instagram"></span>
+        </a>
+        <a class="text-light" href="https://www.linkedin.com" target="_blank">
+            <span class="fab fa-linkedin-in"></span>
+        </a>
+    </div>
+</footer>
+<script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../script.js"></script>
+<script src="../node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

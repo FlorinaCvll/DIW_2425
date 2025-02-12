@@ -12,16 +12,11 @@
           referrerpolicy="no-referrer" rel="stylesheet"/>
 </head>
 <body class="d-flex flex-column min-vh-100 bg-color">
-<svg class="butterfly" viewBox="0 0 100 100">
-    <!-- Dibujo de las alas de la mariposa -->
-    <polygon class="wing-left" points="50,50 20,0 0,40" fill="pink" />
-    <polygon class="wing-right" points="50,50 80,0 100,40" fill="pink" />
-</svg>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <!--NAVBAR-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Simba</a>
+        <a class="navbar-brand" href="#">Amaranthine</a>
         <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler"
                 data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button">
@@ -30,47 +25,168 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a aria-current="page" class="nav-link active" href="Home.html">Inicio</a>
-                <a class="nav-link" href="About.html">Sobre mi</a>
-                <a class="nav-link" href="Portfolio.html">Portfolio</a>
-                <a class="nav-link" href="Services.html">Servicios</a>
-                <a class="nav-link" href="Contact.html">Contacto</a>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                       href="#" id="navbarDropdown1" role="button">Sobre Nosotros</a>
+                    <ul aria-labelledby="navbarDropdown2" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./About/SobreSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="./About/SobreKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="./About/SobreAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="./About/SobreRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="./About/SobrePrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                       href="#" id="navbarDropdown2" role="button">Portfolio</a>
+                    <ul aria-labelledby="navbarDropdown2" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Portfolio/PortfolioSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="./Portfolio/PortfolioKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="./Portfolio/PortfolioAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="./Portfolio/PortfolioRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="Portfolio/PortfolioPrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                       id="navbarDropdown3" role="button">Servicios</a>
+                    <ul aria-labelledby="navbarDropdown3" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Services/ServiciosSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="./Services/ServiciosKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="./Services/ServiciosAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="./Services/ServiciosRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="./Services/ServiciosPrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <a class="nav-link" href="Contacto/Contact.html">Contacto</a>
             </div>
         </div>
     </div>
 </nav>
-<!--Imagenes y texto-->
-<section class="container-fluid text-center" id="home">
-    <div class="jumbotron" data-aos="fade-up">
-        <h1 class="display-4">Simba</h1>
-        <p class="lead">Simba es un gato europeo lleno de carisma y energía. De porte elegante y mirada expresiva,
-            combina curiosidad, inteligencia y un carácter juguetón. Su personalidad lo convierte en el centro de
-            atención y un compañero único.</p>
-        <hr class="my-4">
-        <div class="mb-4">
-            <img alt="Simba" class="rounded-circle img-fluid custom-imgFluid" data-aos="zoom-in" src="IMG/Simba.jpg">
+<div class="container-fluid">
+    <div class="parpadeo2">
+        <pre class=" cuerpo">
+            🌿 Cada historia tiene su voz, cada presencia su luz...
+
+               Aquí encontrarás miradas llenas de valentía,
+               patitas que dejaron huellas en el alma
+               y latidos que aún acompañan mis días.
+
+               Simba, Aslan, Lucy y Princess están aquí,
+               dispuestos a ser descubiertos,
+               esperando que sus historias sean contadas.
+
+               Pero si buscas a Rookie y Kenny,
+               solo el viento puede susurrar sus nombres.
+               No están aquí, pero nunca se han ido del todo.
+
+               Explora, siente, conoce…
+               este rincón está lleno de vida y memoria.
+        </pre>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col"> <!--SIMBA-->
+            <div class="jumbotron p-4 border rounded" data-aos="slide-right">
+                <h1 class="display-4 text-center">Simba <i class="fas fa-cat fa-xs align-middle ms-2"></i></h1>
+                <p class="lead"> Un gato lleno de energía y valentía, siempre listo para la aventura. Su espíritu
+                    radiante ilumina cada rincón con alegría.</p>
+                <hr class="my-4">
+                <div class="mb-4 text-center">
+                    <img alt="Simba" class="rounded-circle img-fluid custom-imgFluid"
+                         src="./Galeria/Simba/Simba.jpg">
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-primary btn-lg" href="./About/SobreSimba.html" role="button">Saber
+                        más sobre mí</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <a class="btn btn-primary btn-lg" data-aos="fade-right" href="About.html" role="button">Saber más sobre
-                mi</a>
+        <div class="col"> <!--KENNY-->
+            <div class="jumbotron p-4 border rounded" data-aos="slide-left">
+                <h1 class="display-4 text-center">Kenny <i class="fas fa-dog fa-xs align-middle ms-2"></i> <i
+                        class="fas fa-cross fa-xs align-middle ms-2"></i></h1>
+                <p class="lead">Un perro leal e inquebrantable, cuyo amor sigue dejando huella. Su recuerdo es un
+                    símbolo eterno de fidelidad.</p>
+                <hr class="my-4">
+                <div class="mb-4 text-center">
+                    <img alt="Kenny" class="rounded-circle img-fluid custom-imgFluid"
+                         src="./Galeria/Kenny/Kenny_01.jpg">
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-primary btn-lg" href="./About/SobreKenny.html" role="button">Saber
+                        más sobre mí</a>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+    <hr class="separador" data-aos="fade-in">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col"> <!-- ASLAN Y LUCY-->
+            <div class="jumbotron p-4 border rounded" data-aos="slide-right">
+                <h1 class="display-4 text-center">Aslan & Lucy <i class="fas fa-cat fa-xs align-middle ms-2"></i></h1>
+                <p class="lead">Hermanos inseparables, unidos por un lazo inquebrantable. Juntos representan la armonía
+                    y la fortaleza del amor fraternal.</p>
+                <hr class="my-4">
+                <div class="mb-4 text-center">
+                    <img alt="Aslan y Lucy" class="rounded-circle img-fluid custom-imgFluid"
+                         src="./Galeria/Aslan-Lucy/AL_11.jpg">
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-primary btn-lg" href="./About/SobreAslanLucy.html" role="button">Saber
+                        más sobre mí</a>
+                </div>
+            </div>
+        </div>
+        <div class="col"> <!--ROOKIE-->
+            <div class="jumbotron p-4 border rounded" data-aos="slide-up">
+                <h1 class="display-4 text-center">Rookie <i class="fas fa-dog fa-xs align-middle ms-2"></i> <i
+                        class="fas fa-cross fa-xs align-middle ms-2"></i></h1>
+                <p class="lead">Un perro que trajo calidez y felicidad, dejando un legado de amor incondicional. Su
+                    espíritu sigue presente en cada recuerdo.</p>
+                <hr class="my-4">
+                <div class="mb-4 text-center">
+                    <img alt="Rookie" class="rounded-circle img-fluid custom-imgFluid"
+                         src="./Galeria/Rookie/Rookie_01.jpg">
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-primary btn-lg" href="./About/SobreRookie.html" role="button">Saber
+                        más sobre mí</a>
+                </div>
+            </div>
+        </div>
+        <div class="col"> <!--PRINCESS-->
+            <div class="jumbotron p-4 border rounded" data-aos="slide-left">
+                <h1 class="display-4 text-center">Princess <i class="fas fa-dog fa-xs align-middle ms-2"></i></h1>
+                <p class="lead">Una pitbull de corazón noble y alma fuerte. Su grandeza brilla en su ternura y su
+                    lealtad infinita.</p>
+                <hr class="my-4">
+                <div class="mb-4 text-center">
+                    <img alt="Princess" class="rounded-circle img-fluid custom-imgFluid"
+                         src="./Galeria/Princess/Princess_01.jpg">
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-primary btn-lg" href="./About/SobrePrincess.html" role="button">Saber más
+                        sobre mí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<!-- Footer -->
 <footer class="bg-dark text-light text-center py-3 mt-auto">
     <div class="container">
         <p>Sígueme en redes sociales</p>
         <a class="text-light me-3" href="https://www.facebook.com" target="_blank">
-            <span class="fab fa-facebook-f">
+            <span class="fab fa-facebook-f"></span>
         </a>
         <a class="text-light me-3" href="https://www.twitter.com" target="_blank">
-            <span class="fab fa-twitter">
+            <span class="fab fa-twitter"></span>
         </a>
         <a class="text-light me-3" href="https://www.instagram.com" target="_blank">
-            <span class="fab fa-instagram">
+            <span class="fab fa-instagram"></span>
         </a>
         <a class="text-light" href="https://www.linkedin.com" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
+            <span class="fab fa-linkedin-in"></span>
         </a>
     </div>
 </footer>
@@ -78,7 +194,6 @@
 <script src="script.js"></script>
 <script src="./node_modules/aos/dist/aos.js"></script>
 <script>
-
     AOS.init();
 </script>
 </body>

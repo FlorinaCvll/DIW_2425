@@ -1,17 +1,12 @@
+/*HOME*/
 body {
+    width: 100%;
     cursor: url('Cursores/Gato/AS2.cur') 32 32, auto;
-    background-color: #E6E6FA; /* Lila Claro */
+    background-color: #E6E6FA;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
-
-.butterfly {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-}
 a, .btn {
     cursor: url('Cursores/Gato02/ASK2.cur') 32 32, auto;
 }
@@ -21,9 +16,11 @@ a, .btn {
 }
 
 .custom-imgFluid{
-    max-width: 250px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
-
 .carousel-item img {
     max-height: 500px;
     max-width: 100%;
@@ -42,15 +39,12 @@ a, .btn {
 .pg1 {
     background-color: #FFC0CB;
 }
-
 .pg2 {
     background-color: #FF69B4;
 }
-
 .pg3 {
     background-color: #9370DB;
 }
-
 .pg4 {
     background-color: #ADD8E6;
 }
@@ -85,4 +79,236 @@ h1, h2, h3, h4, h5, h6 {
 }
 footer a{
     font-size: 1.5em;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    background: linear-gradient(45deg, rgba(80, 200, 120, 0.6), rgba(224, 17, 95, 0.6), rgba(15, 82, 186, 0.6), rgba(153, 102, 204, 0.6), rgba(255, 255, 255, 0.6), rgba(255, 191, 0, 0.6), rgba(64, 224, 208, 0.6));
+    background-size: 200% 200%;
+    animation: backgroundGradient 10s linear infinite;
+}
+
+@keyframes backgroundGradient {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.navbar-brand {
+    color: #340e2f;
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+
+.separador {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background: linear-gradient(90deg, #0d39ac, rgba(118, 23, 44, 0.4), #60afce);
+    background-size: 200% 100%;
+    animation: olas 5s infinite linear;
+}
+
+@keyframes olas {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/*About Simba*/
+.sst {
+    /*Sobre Simba Titulo*/
+    color: #D32F2F;
+    font-family: "Playfair Display", serif;
+}
+
+.ssst {
+    /*Sobre Simba SubTitulo*/
+    color: #ad9732;
+    font-family: Cormorant Garamond, serif;
+}
+
+.ssc {
+    /*Sobre Simba Cuerpo*/
+    color: #2C2C2C;
+    font-family: Lora, serif;
+}
+
+.sspp {
+    /*Sobre Simba Progress*/
+    color: #FF7043;
+    font-family: Cormorant Garamond, serif;
+}
+
+/*About Kenny*/
+.skt {
+    color: #FFB300;
+    font-family: "Playfair Display", serif;
+}
+
+.skst {
+    color: #A0522D;
+    font-family: Cormorant Garamond, serif;
+}
+
+.skc {
+    color: #572f23;
+    font-family: Lora, serif;
+}
+
+.skp {
+    color: #1B4F72;
+    font-family: Cormorant Garamond, serif;
+}
+
+/*About Aslan & Lucy*/
+.salt {
+    color: #9C27B0;
+    font-family: "Playfair Display", serif;
+}
+
+.salst {
+    color: #CE93D8;
+    font-family: Cormorant Garamond, serif;
+}
+
+.salc {
+    color: #64B5F6;
+    font-family: Lora, serif;
+}
+
+.salpp {
+    color: #7c9be8;
+    font-family: Cormorant Garamond, serif;
+}
+
+/*About Rookie*/
+.srt {
+    color: #9d70e7;
+    font-family: "Playfair Display", serif;
+}
+
+.srst {
+    color: #F8BBD0;
+    font-family: Cormorant Garamond, serif;
+}
+
+.src {
+    color: #78909C;
+    font-family: Lora, serif;
+}
+
+.srp8054C4FF {
+    color: #6D4C41;
+    font-family: Cormorant Garamond, serif;
+}
+
+/*About Princess*/
+.spt {
+    color: #0D47A1;
+    font-family: "Playfair Display", serif;
+}
+
+.spst {
+    color: #9575CD;
+    font-family: Cormorant Garamond, serif;
+}
+
+.spc {
+    color: #278ac0;
+    font-family: Lora, serif;
+}
+
+.spp {
+    color: #2E2E2E;
+    font-family: Cormorant Garamond, serif;
+}
+
+.titulos {
+    font-family: "Playfair Display", serif;
+}
+
+.subtitulos {
+    font-family: Cormorant Garamond, serif;
+}
+
+.cuerpo {
+    font-family: Lora, serif;
+}
+
+
+.parpadeo {
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 2px solid red;
+    color: red;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    animation: parpadear 1s infinite;
+}
+
+@keyframes parpadear {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.parpadeo2 {
+    background: linear-gradient(45deg, #FFB6C1, #ADD8E6, #90EE90, #FFD700);
+    background-size: 400% 400%;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto 0 auto;
+    animation: transicionSuave 10s infinite;
+}
+
+@keyframes transicionSuave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+footer a {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+}
+
+footer a img, footer a i {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    vertical-align: middle;
 }

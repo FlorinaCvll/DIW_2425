@@ -6,13 +6,20 @@
     <link href="../../../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="IMG/jazmin.png" rel="shortcut icon" type="image/x-icon">
     <link href="./assets/css/Styless.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <script defer src="assets/js/Scripts.js"></script>
 </head>
 <body>
 <canvas id="snowCanvas"></canvas>
-<audio id="audioPrincipal"> Tu navegador no soporta la reproducción de audio.
-</audio>
-<div class="container-fluid">
+<audio id="audioPrincipal">Tu navegador no soporta la reproducción de audio.</audio>
+
+<div class="welcome-card" data-aos="fade-up" data-aos-duration="1000" id="welcome-card">
+    <h1>Hyperborea</h1>
+    <p><em>Sabemos que tan lejos está nuestro hogar</em></p>
+</div>
+
+<div class="container-fluid main-content">
+    <!-- Aquí va el resto del contenido de tu página -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="./eastereggs/snowdrop.html">
@@ -26,12 +33,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <!-- Enlace normal -->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-
-                    <!-- Dropdown 1 -->
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item dropdown">
                         <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
                            id="dropdown1" role="button">
@@ -42,8 +44,6 @@
                             <li><a class="dropdown-item" href="#">Categoría 2</a></li>
                         </ul>
                     </li>
-
-                    <!-- Dropdown 2 -->
                     <li class="nav-item dropdown">
                         <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
                            id="dropdown2" role="button">
@@ -54,8 +54,6 @@
                             <li><a class="dropdown-item" href="#">Producto 2</a></li>
                         </ul>
                     </li>
-
-                    <!-- Dropdown 3 -->
                     <li class="nav-item dropdown">
                         <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
                            id="dropdown3" role="button">
@@ -66,8 +64,6 @@
                             <li><a class="dropdown-item" href="#">Servicio 2</a></li>
                         </ul>
                     </li>
-
-                    <!-- Dropdown 4 -->
                     <li class="nav-item dropdown">
                         <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
                            id="dropdown4" role="button">
@@ -78,8 +74,6 @@
                             <li><a class="dropdown-item" href="#">Artículo 2</a></li>
                         </ul>
                     </li>
-
-                    <!-- Dropdown 5 -->
                     <li class="nav-item dropdown">
                         <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
                            id="dropdown5" role="button">
@@ -90,11 +84,7 @@
                             <li><a class="dropdown-item" href="#">Teléfono</a></li>
                         </ul>
                     </li>
-
-                    <!-- Enlace normal -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -107,37 +97,24 @@
             <div class="card winter-card p-4 mt-4 h-100">
                 <h3 class="card-title">Hyperborea</h3>
                 <p class="card-text">In Greek mythology, Hyperborea was a region situated in the as yet unknown northern
-                    lands,
-                    north of Thrace.
-                    north of Thrace. Its name (from the Greek (Υπερ βορεία) Hyper Boreia ‘beyond the north’) derives
-                    precisely
-                    from the fact that the wind-god Boreas was believed to dwell in Hyperborea.
-                    from the fact that the wind-god Boreas was believed to dwell in Thrace, and the Hyperboreans, his
-                    sons,
-                    would dwell further north of this kingdom, in the country of Thrace.
-                    north of this kingdom, in the country of Hyperborea!</p>
+                    lands, north of Thrace. Its name (from the Greek (Υπερ βορεία) Hyper Boreia ‘beyond the north’)
+                    derives precisely from the fact that the wind-god Boreas was believed to dwell in Hyperborea.</p>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card winter-card p-4 mt-4 h-100">
                 <h3 class="card-title">Hyperborea</h3>
-                <p class="card-text">Beyond the north, in northern lands unknown to mankind.
-                    They never found our home for it was everywhere but nowhere at the same time.
-                    We are where Boreas, god of the north wind, is.
-                    Where is he?
-                    They place us above the Arctic Circle, where the Aurora Borealis are born and they are still wrong.
-                    I am a daughter of Boreas, I am hyperborea, I know how far away our home is.
-                    And you will never find me in the North for I will follow you wherever you are.
-                    Cara mia, take me away from my home, away from the North and all that I know, but do not go where I
-                    cannot
-                    follow you.
-                    Ty, in case you don't know, you are my Hyperborea.</p>
+                <p class="card-text">Beyond the north, in northern lands unknown to mankind. They never found our home
+                    for it was everywhere but nowhere at the same time. We are where Boreas, god of the north wind, is.
+                    Where is he? They place us above the Arctic Circle, where the Aurora Borealis are born and they are
+                    still wrong.</p>
             </div>
         </div>
     </div>
-
 </div>
-<script src="./bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+<script src="../../../bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="./assets/js/snow.js"></script>
+<script src="assets/js/Scripts.js"></script>
 </body>
 </html>

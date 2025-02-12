@@ -27,6 +27,28 @@ canvas {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir sombra para resaltar el borde */
 }
 
-.card-text {
-    text-align: justify;
+.welcome-card {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://via.placeholder.com/1600x900.png?text=Tema+Invernal') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    position: fixed;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.welcome-card h1, .welcome-card p {
+    background-color: rgba(0, 51, 102, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main-content {
+    margin-top: 100vh;
 }

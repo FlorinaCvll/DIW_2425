@@ -2,19 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Personal</title>
-    <link href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Vars.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
+    <title>Portfolio Simba</title>
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Vars.css" rel="stylesheet" type="text/css">
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/aos/dist/aos.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
           integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
 </head>
 <body class="d-flex flex-column min-vh-100 bg-color">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<!--NAVBAR-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Simba</a>
+        <a class="navbar-brand" href="#">Amaranthine</a>
         <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler"
                 data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button">
@@ -22,30 +24,60 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" href="Home.html">Inicio</a>
-                <a class="nav-link" href="About.html">Sobre mi</a>
-                <a class="nav-link active" href="Portfolio.html">Portfolio</a>
-                <a class="nav-link" href="Services.html">Servicios</a>
-                <a class="nav-link" href="Contact.html">Contacto</a>
+                <a aria-current="page" class="nav-link active" href="../Home.html">Inicio</a>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                       href="#" id="navbarDropdown1" role="button">Sobre Nosotros</a>
+                    <ul aria-labelledby="navbarDropdown2" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../About/SobreSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="../About/SobreKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="../About/SobreAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="../About/SobreRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="../About/SobrePrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                       href="#" id="navbarDropdown2" role="button">Portfolio</a>
+                    <ul aria-labelledby="navbarDropdown2" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Portfolio/PortfolioSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="../Portfolio/PortfolioKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="../Portfolio/PortfolioAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="../Portfolio/PortfolioRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="PortfolioPrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                       id="navbarDropdown3" role="button">Servicios</a>
+                    <ul aria-labelledby="navbarDropdown3" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Services/ServiciosSimba.html">Simba</a></li>
+                        <li><a class="dropdown-item" href="../Services/ServiciosKenny.html">Kenny</a></li>
+                        <li><a class="dropdown-item" href="../Services/ServiciosAslanLucy.html">Aslan y Lucy</a></li>
+                        <li><a class="dropdown-item" href="../Services/ServiciosRookie.html">Rookie</a></li>
+                        <li><a class="dropdown-item" href="../Services/ServiciosPrincess.html">Princess</a></li>
+                    </ul>
+                </div>
+                <a class="nav-link" href="../Contacto/Contact.html">Contacto</a>
             </div>
         </div>
     </div>
 </nav>
 
-<div class="container-fluid" data-aos="fade-up">
-    <h1 class="display-4 text-center">Portfolio</h1>
-    <div class="row">
+<div class="container-fluid">
+    <h1 class="display-4 text-center pt-4">🐾 Simba – La Llama del Coraje</h1>
+    <div class="row pt-5">
         <div class="col-md-4 mb-3" data-aos="fade-right">
             <div class="card h-100">
                 <img alt="Simba plagas" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
-                     src="IMG/plagas.jpeg" title="Simba plagas">
+                     src="../Galeria/Simba/plagas.jpg" title="Simba plagas">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Gestión de Plagas Domésticas <i class="fas fa-bug text-muted"></i>
                     </h5>
                     <p class="card-text">
                         <span class="d-block fw-semibold">Descripción</span> Implementación de un sistema natural de
                         control de insectos mediante técnicas avanzadas de cacería.
-                        <span class="d-block fw-semibold">Rol de Simba</span> Jefe de Operaciones de Caza, garantizando
+                        <span class="d-block fw-semibold">Rol</span> Jefe de Operaciones de Caza, garantizando
                         un hogar libre de moscas y otros insectos.
                     </p>
                     <div class="d-flex justify-content-center">
@@ -54,10 +86,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 mb-3" data-aos="fade-up">
+        <div class="col-md-4 mb-3" data-aos="fade-down">
             <div class="card h-100">
                 <img alt="Simba cata" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
-                     src="IMG/catar.jpeg"
+                     src="../Galeria/Simba/catar.jpg"
                      title="Simba cata">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Cata Gourmet para Gatos <i
@@ -65,7 +97,7 @@
                     <p class="card-text">
                         <span class="d-block fw-semibold">Descripción</span> Evaluación de una amplia variedad de snacks
                         y alimentos, categorizados según sabor, textura y aroma.
-                        <span class="d-block fw-semibold">Rol de Simba</span> Catador Principal, aportando opiniones
+                        <span class="d-block fw-semibold">Rol</span> Catador Principal, aportando opiniones
                         basadas en su experiencia diaria.</p>
                     <div class="d-flex justify-content-center">
                         <a class="btn btn-primary" href="#">Ir a proyecto</a>
@@ -76,7 +108,7 @@
         <div class="col-md-4 mb-3" data-aos="fade-left">
             <div class="card h-100">
                 <img alt="Simba dormido" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
-                     src="IMG/Simbote.jpg" title="Simba dormido">
+                     src="../Galeria/Simba/Simbote.jpg" title="Simba dormido">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Instructor de Relajación y Siestas Profesionales<i
                             class="fas fa-bed text-muted"></i></h5>
@@ -84,7 +116,7 @@
                         <span class="d-block fw-semibold">Descripción</span> Promoción de técnicas avanzadas de
                         relajación y descanso, demostrando la importancia de encontrar el lugar perfecto para una siesta
                         en cualquier momento del día.
-                        <span class="d-block fw-semibold">Rol de Simba</span> Mentor y Modelo de Relax, enseñando a
+                        <span class="d-block fw-semibold">Rol</span> Mentor y Modelo de Relax, enseñando a
                         través del ejemplo cómo maximizar la calidad del descanso.</p>
                     <div class="d-flex justify-content-center">
                         <a class="btn btn-primary" href="#">Ir a proyecto</a>
@@ -97,14 +129,14 @@
         <div class="col-md-4 mb-3" data-aos="fade-right">
             <div class="card h-100">
                 <img alt="Simba protector" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
-                     src="IMG/protector.jpeg" title="Simba protector">
+                     src="../Galeria/Simba/protector.jpg" title="Simba protector">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Protección y Compañía 24/7<i
                             class="fas fa-shield-alt text-muted"></i></h5>
                     <p class="card-text">
                         <span class="d-block fw-semibold">Descripción</span> Proyecto para garantizar la seguridad
                         emocional de su humano, mediante una presencia constante en momentos clave del día.
-                        <span class="d-block fw-semibold">Rol de Simba</span> Guardián y Asistente Personal, siempre
+                        <span class="d-block fw-semibold">Rol</span> Guardián y Asistente Personal, siempre
                         atento y presente.</p>
                     <div class="d-flex justify-content-center">
                         <a class="btn btn-primary" href="#">Ir a proyecto</a>
@@ -115,7 +147,7 @@
         <div class="col-md-4 mb-3" data-aos="fade-up">
             <div class="card h-100">
                 <img alt="Simba explorando" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
-                     src="IMG/Explorando.jpeg" title="Simba explorando">
+                     src="../Galeria/Simba/Explorando.jpg" title="Simba explorando">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Explorador de Nuevos Territorios<i
                             class="fas fa-compass text-muted"></i></h5>
@@ -123,7 +155,7 @@
                         <span class="d-block fw-semibold">Descripción</span> Investigación y análisis de cada rincón del
                         hogar, incluyendo áreas previamente inexploradas como armarios, cajas y espacios debajo de
                         muebles.
-                        <span class="d-block fw-semibold">Rol de Simba</span> Explorador Jefe, documentando sus
+                        <span class="d-block fw-semibold">Rol</span> Explorador Jefe, documentando sus
                         descubrimientos con un enfoque creativo.</p>
                     <div class="d-flex justify-content-center">
                         <a class="btn btn-primary" href="#">Ir a proyecto</a>
@@ -134,14 +166,14 @@
         <div class="col-md-4 mb-3" data-aos="fade-left">
             <div class="card h-100">
                 <img alt="Simba decorador" class="card-img-top img-fluid d-block fixed-size mx-auto mt-2"
-                     src="IMG/decorador.jpeg" title="Simba decorador">
+                     src="../Galeria/Simba/decorador.jpg" title="Simba decorador">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Decorador de Interiores Innovador<i
                             class="fas fa-leaf text-muted"></i></h5>
                     <p class="card-text">
                         <span class="fw-semibold">Descripción:</span> Reorganización de plantas, alfombras y otros
                         elementos decorativos del hogar con un enfoque instintivo y único.
-                        <span class="d-block fw-semibold">Rol de Simba:</span> Artista Conceptual, aportando ideas
+                        <span class="d-block fw-semibold">Rol</span> Artista Conceptual, aportando ideas
                         frescas a la decoración del hogar.</p>
                     <div class="d-flex justify-content-center">
                         <a class="btn btn-primary" href="#">Ir a proyecto</a>
@@ -152,27 +184,31 @@
     </div>
 </div>
 
-<footer class="bg-dark text-light text-center py-3 mt-auto" data-aos="fade-up">
+
+<footer class="bg-dark text-light text-center py-3 mt-auto">
     <div class="container">
         <p>Sígueme en redes sociales</p>
         <a class="text-light me-3" href="https://www.facebook.com" target="_blank">
-            <i class="fab fa-facebook-f"></i>
+            <span class="fab fa-facebook-f"></span>
         </a>
         <a class="text-light me-3" href="https://www.twitter.com" target="_blank">
-            <i class="fab fa-twitter"></i>
+            <span class="fab fa-twitter"></span>
         </a>
         <a class="text-light me-3" href="https://www.instagram.com" target="_blank">
-            <i class="fab fa-instagram"></i>
+            <span class="fab fa-instagram"></span>
         </a>
         <a class="text-light" href="https://www.linkedin.com" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
+            <span class="fab fa-linkedin-in"></span>
         </a>
     </div>
 </footer>
-<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-<script src="./node_modules/aos/dist/aos.js"></script>
+<script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../script.js"></script>
+<script src="../node_modules/aos/dist/aos.js"></script>
 <script>
-    AOS.init();
+    document.addEventListener('DOMContentLoaded', function () {
+        AOS.init();
+    });
 </script>
 </body>
 </html>
